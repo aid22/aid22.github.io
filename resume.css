@@ -4,7 +4,9 @@
     margin: 0 auto;
     overflow: hidden;
     position:relative;
-    margin-left: 50px;
+    align-content: center;
+    align-self: center;
+    
 }
 body {
     background-color: #0E3659;
