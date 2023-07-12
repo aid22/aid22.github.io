@@ -1,0 +1,410 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+
+h2 {
+    padding: 20px 0;
+    font-size: 2.2em;
+   
+}
+
+h3 {
+   font-size: 1.2em;
+   padding: 20px 0;
+   font-weight:bold;
+}
+a:link {
+    color: #bfefff;
+    text-decoration:none;
+}
+ 
+a:visited {
+    color: #bfefff;
+}
+
+a:hover {
+    color: #4372ff;
+}
+
+#splash {
+    background-color: #0969ae;
+    height: 1000px;
+    background: url(assets/binary_code_banner_design_2510.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
+#home{
+   background-color: #00385F;
+  
+   padding: 30px 0 50px 0;
+}
+#title {
+    width: 100%;
+    padding-top: 250px;
+    color: #FFFFFF;
+    text-align: right;
+}
+#title h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.4em;
+    text-shadow: 3px 3px 5px #000000;
+}
+#title h2{
+    font-size: 2em;
+    font-style: italic;
+    margin: 0 40px;
+    text-shadow: 2px 2px #000000;
+}
+/*Container*/
+.container {
+    width: 1000px;
+    margin: 0 auto;     /*Center*/
+    overflow: hidden;
+}
+#home .grid-container{
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:10px;
+    
+    justify-content: center;
+}
+
+#home .grid-item {
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#footer {
+    background-color: #003840;
+    font-size: 1.1em;
+    color: #cffbfc;
+    text-align: center;
+    padding: 50px;
+}
+
+
+/* ------ window widths smaller than 1200px - the original container size + margins ------ */
+
+@media screen and (max-width: 1200px) {
+	/* Switch from static 1000px container to a fluid 90% container at smaller display sizes */
+    .container {
+        width: 90%;
+    }
+
+    /* Shrink navigation button text to standard size */
+    ul#menu li a.button {
+        font-size:1.2em;
+    }
+
+    /* Shrunk navigation button button left and right padding so stay on one line */
+    ul#menu li a.button {
+        padding-left: 20px;
+        padding-right: 75px;
+    }
+
+    /* Shrink splash area, and background image for smaller displays */
+    #splash {
+        height: 700px;
+        background-size: 1460px;
+    }	
+
+    /* Keep the site title from being pushed down off the display */
+    #title{
+        padding-top: 200px; 
+    }
+
+    /* Shrink font title on smaller screens */
+    #title h1 {
+        font-size:2.6em;
+    }
+
+    /* Force embedded youtube video to shrink width with display size */
+    /* can't do anything about height */
+    iframe {
+        width: 100%;
+    }
+
+    /* Shrink the blockquote text on smaller displays*/
+    #legacy blockquote {
+        width: 30%;
+        font-size:1.4em;
+    }
+
+} /* end first media query */
+
+/* ------ window widths smaller than 768px - tablets ------ */
+
+@media screen and (max-width: 768px) {
+	
+    /* adjust button left and right padding so buttons don't wrap to 2nd row on smaller displays */
+    ul#menu li a.button {
+        font-size:0.99em;
+        padding-left: 15px;
+        padding-right: 15px;
+    } 
+
+    /* Shrink splash area, and background image for smaller displays */
+    #splash {
+    height: 600px;
+    background-size: 1060px;
+    }	
+
+    /* shrink site title to fit in smaller splash section */
+    #title h1 {
+        font-size:2.1em;
+    }
+
+    /* shrink site byline to fit in smaller splash section */
+    #title h2 {
+        font-size:1.5em;
+    }
+    /* reducing amount of padding at top of first section, so it is within view when page loads */
+    #life {
+        padding-top: 40px;
+    }
+
+    /* increase image size for better viewing on a smaller screen */
+    #life img.right {
+        max-width: 50%;
+    }
+
+    /* increase line height of list, so text does not cram together */
+    #paintings li {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    /* too many columns don't look good on small displays, so reduce amount of columns */
+    #paintings .grid-container {
+        grid-template-columns: auto auto; /* change the number of values to match the amount of desired columns */
+    } 
+    
+    /* prevent subheading from cramming into video */
+    #legacy h3 {
+        padding-top: 20px;
+    }
+    
+    /* increase references font size for easier reading */
+    #legacy ul {
+        font-size:1.2em;
+    }
+
+    /* stack items in a grid into a single column */
+    #legacy .grid-container {
+        grid-template-columns: auto; /* change the number of values to match the amount of desired columns */
+    }
+
+} /* end second media query */
+
+/* ------ window widths smaller than 480px - smartphones ------ */
+
+@media screen and (max-width: 480px) {
+
+    /* adjust button font size and left and right padding so buttons don't wrap to 2nd row on smaller displays */
+    ul#menu li a.button {
+        font-size:0.8em;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
+    /* justify text for smaller screens for easier reading in column format */
+    p {
+        text-align: justify;
+    }
+    /* Shrink splash area, and background image for smaller displays */
+    #splash {
+        height: 340px;
+        background-size: 600px;
+    }
+
+    /* reduce padding so title is not pushed down onto the page */
+    #title {
+        padding-top:150px;
+    }
+
+    /* shrink site title to fit in smaller splash section */
+    #title h1 {
+        font-size: 1.4em;
+    }
+
+    /* shrink site byline to fit in smaller splash section */
+    #title h2 {
+        font-size:1em;
+    }
+
+    /* shrink section headings and subheadings for smaller screens */
+    h2 {
+        font-size:1.8em;
+    }
+
+    h3{
+        font-size:1.2em;
+    }
+
+    /* reduce first section padding on smaller screens, so more content is visible */
+    #life {
+        padding:30px 0 40px;
+    }
+
+    /* removing float to center and enlarge image on bigger screens */
+    #life img.right {
+        float:none;
+        max-width: 90%;
+        margin:0 auto;
+        padding:15px;
+    }
+
+
+    /* reduce second section padding on smaller screens, so more content is visible */
+    #paintings {
+        padding:60px 0 40px;
+    }
+
+    /* stack items in a grid into a single column */
+    #paintings .grid-container {
+        grid-template-columns: auto; /* change the number of values to match the amount of desired columns */
+    }
+
+    /* reduce third section padding on smaller screens, so more content is visible */
+    #legacy {
+        padding:60px 0 40px;
+    }   
+
+    #legacy blockquote {
+        float:none;
+        width:90%;
+        margin:30px auto;
+        padding:10px;
+        font-size:1.2em;
+    }
+
+    /* prevent subheading from cramming into video */
+    #legacy h3 {
+        padding-top: 30px;
+    }
+
+    /* increase references font size for easier reading */
+    #legacy ul {
+        font-size:1.3em;
+    }
+
+    /* do not justify footer text, keep it centered */
+    #footer p {
+        text-align:center;
+    }
+} /* end third media query */
+
+#education .grid-container {
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto; /* Two columns: one for text, one for image */
+    gap: 100px;
+    margin-bottom: 70px;
+  }
+  
+  #education .grid-item {
+
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  #education .grid-item .text {
+    margin-right: 10px; /* Add margin to create space between text and image */
+  }
+  
+  #education .grid-item .image {
+    
+    margin-left: 70px; /* Add margin to create space between text and image */
+  }
+  
+#education{
+    background-color: #001242;
+    padding: 30px 0 30px 0;
+    padding-top: 50px;
+}
+#projects .grid-container{
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto ;
+    gap:10px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#projects .grid-item {
+    
+    padding: 20px;;
+    
+
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#work{
+    background-color: #005E7C;
+   
+    padding: 30px 0 50px 0;
+ }
+ .item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+ }
+nav {
+    background-color: rgba(4, 27, 91, .8); /* change fourth number to adjust transparency */
+    text-align: center; /* center buttons inside navigation area */
+    position: fixed; /* fixes navigation area to top of screen, will always be present even when user scrolls */
+    top: 0; /* aligns navigation bar to top of splash area */
+    width: 100%;
+    height: 75px;
+    overflow:hidden; /* if button padding gets too high, clip the bottom */
+ }	
+ 
+ ul#menu {
+    display:inline-block; /* display as inline block item without line break between */
+    padding: 0; /*removes left indentation from list items */
+    padding-top: 10px; /* adjust padding top to adjust nav bar vertical position */
+ 
+ } 
+ ul#menu li {
+    list-style: none; /* eliminates bullets */ 
+    float: left; /* changes list from vertical to horizontal */
+    padding: 0 0 20px; /* adjust padding so button text is centered */
+ } 
+ ul#menu li a.button {
+    color: white; /* color of button link text */
+    font-size: 1.2em;
+    font-weight:800;
+    text-decoration: none;
+    padding: 35px 50px 35px 50px; /* this padding defines the size of the buttons */ 
+ }
+ #projects {
+    background-color: #2d56f7;
+    padding-top: 50px;
+    
+}
+ 
+ ul#menu li a.button:hover {
+    color:#7094DB; /* change color when mouse hovers over */
+    background-color: rgba(200,200,200,0.5);
+ 
+ } 
