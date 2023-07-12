@@ -1,0 +1,197 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+
+h2 {
+    padding: 20px 0;
+    font-size: 2.2em;
+   
+}
+
+h3 {
+   font-size: 1.2em;
+   padding: 20px 0;
+   font-weight:bold;
+}
+a:link {
+    color: #bfefff;
+    text-decoration:none;
+}
+ 
+a:visited {
+    color: #bfefff;
+}
+
+a:hover {
+    color: #4372ff;
+}
+
+#splash {
+    background-color: #0969ae;
+    height: 1000px;
+    background: url(assets/binary_code_banner_design_2510.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
+#home{
+   background-color: #00385F;
+  
+   padding: 30px 0 50px 0;
+}
+#title {
+    width: 100%;
+    padding-top: 250px;
+    color: #FFFFFF;
+    text-align: right;
+}
+#title h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.4em;
+    text-shadow: 3px 3px 5px #000000;
+}
+#title h2{
+    font-size: 2em;
+    font-style: italic;
+    margin: 0 40px;
+    text-shadow: 2px 2px #000000;
+}
+/*Container*/
+.container {
+    width: 1000px;
+    margin: 0 auto;     /*Center*/
+    overflow: hidden;
+}
+#home .grid-container{
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:10px;
+    
+    justify-content: center;
+}
+
+#home .grid-item {
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#footer {
+    background-color: #003840;
+    font-size: 1.1em;
+    color: #cffbfc;
+    text-align: center;
+    padding: 50px;
+}
+
+#education .grid-container {
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto; /* Two columns: one for text, one for image */
+    gap: 100px;
+    margin-bottom: 70px;
+  }
+  
+  #education .grid-item {
+
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  #education .grid-item .text {
+    margin-right: 10px; /* Add margin to create space between text and image */
+  }
+  
+  #education .grid-item .image {
+    
+    margin-left: 70px; /* Add margin to create space between text and image */
+  }
+  
+#education{
+    background-color: #001242;
+    padding: 30px 0 30px 0;
+    padding-top: 50px;
+}
+#projects .grid-container{
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto ;
+    gap:10px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#projects .grid-item {
+    
+    padding: 20px;;
+    
+
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#work{
+    background-color: #005E7C;
+   
+    padding: 30px 0 50px 0;
+ }
+ .item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+ }
+nav {
+    background-color: rgba(4, 27, 91, .8); /* change fourth number to adjust transparency */
+    text-align: center; /* center buttons inside navigation area */
+    position: fixed; /* fixes navigation area to top of screen, will always be present even when user scrolls */
+    top: 0; /* aligns navigation bar to top of splash area */
+    width: 100%;
+    height: 75px;
+    overflow:hidden; /* if button padding gets too high, clip the bottom */
+ }	
+ 
+ ul#menu {
+    display:inline-block; /* display as inline block item without line break between */
+    padding: 0; /*removes left indentation from list items */
+    padding-top: 10px; /* adjust padding top to adjust nav bar vertical position */
+ 
+ } 
+ ul#menu li {
+    list-style: none; /* eliminates bullets */ 
+    float: left; /* changes list from vertical to horizontal */
+    padding: 0 0 20px; /* adjust padding so button text is centered */
+ } 
+ ul#menu li a.button {
+    color: white; /* color of button link text */
+    font-size: 1.2em;
+    font-weight:800;
+    text-decoration: none;
+    padding: 35px 50px 35px 50px; /* this padding defines the size of the buttons */ 
+ }
+ #projects {
+    background-color: #2d56f7;
+    padding-top: 50px;
+    
+}
+ 
+ ul#menu li a.button:hover {
+    color:#7094DB; /* change color when mouse hovers over */
+    background-color: rgba(200,200,200,0.5);
+ 
+ } 
