@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<!--Site Declerations-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aiden Allen">
+    <meta name="keywords" content="Resume">
+    <title>Aiden Allen &vert; Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600;700&family=Varela+Round&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="responsive.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <!--Head-->
+    <body>
+        <section id="splash">
+          <nav>
+             <div class="container">
+                <ul id="menu"> <!-- creating navigation menu with unordered list -->
+                    <li><a href="#home" class="button">About Me</a></li>
+                    <li><a href="#education" class="button">Education</a></li>
+                    <li><a href="#work" class="button">Work Experience</a></li>
+                    <li><a href="#projects" class="button">Projects</a></li>
+                    <li>
+                        <a href="#" id="toggle-link">
+                            <img src="assets/870898.png" width="40" height="40" id="flippable-image" class="back">
+                          </a>
+                    </li>
+               </ul>
+             </div> <!-- end container div -->
+          </nav> <!-- end navigation -->
+      
+           <div id="title">
+             <div class="container">
+        
+                <h1>Aiden Allen</h1>
+                <h2>Resume</h2>
+             </div> <!-- end container div -->
+          </div> <!-- end title div --> 
+        </section>
+
+    <section id="home">
+        <div class="container">
+            <div>
+                <h2>
+                    About Me
+                </h2>
+            
+                <p> 
+                    Hello! My name is Aiden Allen. I am an aspiring software engineer currently majoring in Computer Science at Florida State University.
+                    I have been programming since high school, and worked and posted numerous projects since.  As I progressed through middle school, my interests shifted towards mathematics, and I envisioned a future as a mathematician. However, it was during this time that I stumbled upon the world of technology, and it captivated me instantly. I would stay awake late into the night, engrossed in videos that taught me how to assemble computers, and I eagerly filled my mom's Amazon cart with essential components like CPUs, GPUs, motherboards, and PSUs.
+
+                    Driven by this newfound love for technology, I made a significant decision during my sophomore year of high school: to enroll in a programming course. This course primarily focused on the fundamentals of Python. I dedicated countless hours to crafting intricate programs that exceeded the course requirements. My final project for this high school course can be found <a href="https://github.com/awa03/FSU-Projects/blob/main/j.py">here</a>. 
+    
+                    <br><br>
+                    As I entered college for Computer Science I continued to watch tutorial after tutorial learning everything I can about programming. My Freshman year I taught myself HTML, and started taking notes through my website. The <a href="https://awa03.github.io/">site</a> and <a href="https://github.com/awa03/awa03.github.io">source code</a> of which are published on my github.
+    
+
+                    <br><br>
+                    
+
+                    <strong>Address - </strong> 700 N Woodward #604 <br>
+                    <strong>Email - </strong> awa22@fsu.edu <br>
+                    <strong>Phone - </strong> (813) 420 1146
+                    <br>
+                    <button onclick="showPopup()" class="custom-button">Daily Update</button>
+
+                    <div id="popup" class="popup">
+                        <div class="popup-content">
+                        <span class="close" onclick="closePopup()">&times;</span>
+                        <h2>Daily Update</h2>
+                        <p><strong>July 14th - </strong>
+                            I am currently learning javascript. I have made many minor improvements such
+                            as new buttons and ways the user can interact with the website. I hope to learn
+                            more so I can begien working on a large scale project.
+                        </p>
+                        </div>
+                    </div>
+                </p>
+        </div>
+        <div>
+            <h2>
+                <center>Programming Languages & Operating Systems</center>
+
+            </h2>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <ul>
+                    <li>C++</li>
+                    <li>C</li>
+                    <li>HTML/CSS</li>
+                    <li>Python</li>
+                    <li>Mips Assembly</li>
+                    <li>Java</li>
+                    
+                    
+                </ul>  
+            </div>
+            <div class="grid-item">
+                <ul>
+                    
+                    <li>Linux</li>
+                    <li>Unix</li>
+                    <li>SQL</li>
+                    <li>NOSQL</li>
+                    <li>Mac</li>
+                    <li>Windows</li>
+                    
+                </ul>  
+            </div>
+            <div class="grid-item">
+                <ul>
+                <li>Word</li>
+                <li>Excel</li>
+                <li>Photoshop</li>
+                <li>Gimp</li>
+                <li>Final Cut X</li>
+                <li>Premiere Pro</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section id="education">
+        
+        <div class="container">
+            <h1>
+                Education
+            </h1>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="text">
+                    <h1>Bachelor's FSU</h1>
+
+                    <p>
+                        I currently attend Florida State University.<br>
+                        <strong>Grade -</strong> Sophmore <br>
+                        <strong>Major -</strong> Computer Science <br>
+                        <strong>Minor -</strong> Philosphy of Science <br>
+                        I have been attending FSU since summer 2022. Through my short 
+                        time so far at FSU I have learned the importance of teamwork and 
+                        communication within the feild of design. I plan to further 
+                        my education beyond a bachelor's degree so that I may develop 
+                        my understanding of computer systems, and the ways in which 
+                        they interact with one another. 
+                    </p>
+                    </div>
+                
+                
+                    <img src="assets/Florida-State-Seminoles-basketball-logo.jpg" class="image im" height="220" width="330" alt="FSU BANNER">
+                    <br>
+                </div>
+                <div class="grid-item">
+                    <div class="text">
+                    <h1>
+                        High School Diploma
+                    </h1>
+                    
+                    <p>
+                        
+                        <strong>Date Attended -</strong> 2018 - 2021<br>
+                        During my high school years, I actively pursued programming opportunities by enrolling in courses offered by the Florida Virtual School. I excelled academically and demonstrated advanced proficiency, leading to the decision to skip my senior year. As a result, I graduated in my junior year, while actively participating in extracurricular activities such as membership in the esteemed Mu Alpha Theta mathematics honor society at Robinson High School, along with various other clubs.
+
+                
+                    </p>
+                    </div>
+                
+                    <img src="assets/panther.png" class="image" height="200" width="200" >
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="work">
+        <div class="container">
+            
+            <div>
+                <h2>
+                    Work Experience
+                </h2>
+            </div>
+            <div class="item">
+                <h3>
+                    Westhore Farmers Market
+                </h3>
+                <p>
+                    <strong>
+                        Title: Manager / Food Stocker<br>
+                        Start Date: 01/09/20<br>
+                        Last Day: 06/22/22<br>
+                        My Experience: 
+                    </strong>
+                    At Westhore Farmers Market, we took pride in our commitment to sustainable agriculture and support for local businesses. As part of my role, I focused on building and maintaining strong relationships with vendors, offering them the necessary resources and support to thrive in the market. Moreover, I actively engaged with customers, creating a welcoming environment and addressing their needs and questions with attentiveness and friendliness.
+                    <br><br>
+                    <strong>
+                        Address:</strong> 3401 S West Shore Blvd, Tampa, FL 33629 <br>
+                        <strong> Phone:</strong> (813) 831 5444
+                    
+
+                </p>
+                
+            </div>
+            <br>
+            <div class="item">
+                
+                <h3>
+                    Fire House Subs
+                </h3>
+                <p>
+                    <strong>
+                        Title: Floor Staff<br>
+                        Start Date: 08/05/19<br>
+                        Last Day: 01/08/20<br>
+                        My Experience: 
+                    </strong>
+                    Through out my employment at Fire House Subs I learned varias skills. 
+                    Skills such as team work, and cleanlyness were useful in managing a high stress
+                    kitchen enviorment.
+                    <br><br>
+                    <strong>Address:</strong> 2227 S Dale Mabry Hwy, Tampa, FL 33629 <br>
+                    <strong>Phone:</strong> (813) 251 1921
+                   
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+    
+    <section id="projects">
+        <div class="container">
+            <div>
+                <h2>
+                    Projects
+                </h2>
+            </div>
+            <div class="grid-container">
+            
+            <!--MAZE GAME-->
+            <div class="grid-item">
+                <h3>
+                    Learn To Code
+                </h3>
+                <p>
+                    <strong>*In Development*</strong><br>
+                    Driven by a desire to make coding accessible to all, "Learn to Code" embraces a universal approach. By focusing on the widely-used C++ language, the website seeks to equip learners with a strong foundation that can be built upon to conquer diverse programming challenges. Through a harmonious fusion of user-friendly tutorials, relatable real-world examples, and interactive coding exercises, this platform strives to instill confidence, bolster problem-solving skills, and nurture a genuine love for programming.
+                    <br> <br>
+                    <a href="https://learncodefree.github.io/index.html" target=”_blank”>Learn To Code!</a>
+                </p>
+            </div>
+            <div class="grid-item">
+                <h3>
+                    Maze Game
+                </h3>
+                <p>
+                    This project aimed to showcase my comprehensive understanding of classes, objects, and arrays. The primary objective of the game was to navigate the player (represented by the symbol A) through a maze while avoiding walls (symbolized by #) and reaching the exit. Along the way, the player encountered various obstacles, including vanishing items (symbolized by v) that concealed their position. A console mode, accessible through the tilda key, provided essential information about the player, such as their current position and the number of vanishes until reaching the exit.
+
+Furthermore, recent builds of the game introduced additional features like a maze builder, the ability to import mazes, and customizable settings. During the development process, I encountered challenges with the maze import functionality, primarily due to inconsistencies in reading the file caused by differences between the endl and \n characters. To overcome this hurdle, I implemented a solution that selectively reads viable characters, ensuring that the exact format of the stored array became less critical.
+                    <br> <br>
+                    <a href="https://replit.com/@awa03/mazeGame" target=”_blank”>Play Game</a>
+                    <br>
+                    <a href="https://github.com/awa03/mazeGame" target=”_blank”>Source Code</a> 
+                    
+                </p>
+            </div>
+            <!--BOOKSTORE-->
+            <div class="grid-item">
+                <h3>
+                    Bookstore
+                </h3>
+                <p>
+                    The Bookstore program was completed for the course COP 3330 (OOP) at Florida State University. The purpose of this game was to demonstrate my ability to 
+     use multifile compilation, pointers, and dynamic memory allocation to create a cohesive store. The program works through a dynamically allocated list of 
+     books (objects of class) within a register object. This solves the issue of scalability, since this program may hold as many books as allowed by your computer's memory. This program taught me the importance of abstraction within object-oriented programming, as well as how to build a cohesive operation that scales to the user's needs.
+                    <br> <br>
+                    <a href="https://replit.com/@awa03/Book-Store?v=1" target=”_blank”>Run Program</a>
+                    <br>
+                    <a href="https://github.com/awa03/FSU-Projects/tree/main/Project%205" target=”_blank”>Source Code</a> 
+                    
+                </p>
+            </div>
+            <div class="grid-item">
+                <h3>
+                    Freud Website / Notes 
+                </h3>
+                <p>
+                    The purpose of this assignment was to showcase my expertise in HTML and web design. The website I created was specifically tailored to complement my minor in Philosophy of Science, demonstrating my proficiency in conducting thorough research and designing a compelling site. It was developed as part of a web design project, with careful attention given to the choice of color palette, overall design aesthetics, and engaging content to enhance user engagement.
+                    The assignment is conveniently accessible through the Freud Website button on the designated site, providing a seamless user experience. This project stands as a testament to my ability to effectively utilize HTML and employ creative design principles to deliver an impactful and visually appealing website that aligns with the subject matter.
+                    <br><br>
+                    <a href="https://awa03.github.io/" target=”_blank”>Website</a>
+                    
+                </p>
+            </div>
+    
+            <div class="grid-item">
+                <h3>
+                    Freud Essay
+                </h3>
+                <p>
+                    his essay serves as a comprehensive exploration of the foundational principles of Freudian teachings. It was conceived as a personal project, driven by my deep fascination and curiosity for both Philosophy and Psychology. The primary objective of this endeavor was to delve into the intricate concepts and theories proposed by Sigmund Freud, thereby expanding my knowledge and understanding in these interconnected fields. I delved into a wide range of scholarly sources, critically analyzing and synthesizing information to provide a comprehensive overview of Freud's teachings. 
+                    <br><br>
+                <a href="https://medium.com/@4376340/a-brief-introduction-to-freud-f0bfe2a4e8fd" target=”_blank”>Essay Link</a>
+    
+                </p>
+            </div>
+    
+            <div class="grid-item">
+                <h3>
+                    Is Science at War with Religion? Essay
+                </h3>
+                <p>
+                    This essay attempts to answer the question of if science and religion are in conflict. I began this essay as an attempt to formulate my own opinion on the subject matter. While I do disagree to an extent with my conclusion, I believe that this essay is an example of my writing skills as well as my understanding of philosophy.
+                    <br><br>
+                    <a href="https://medium.com/@4376340/are-science-and-religion-in-conflict-6a27b6cd41c9" target=”_blank”>Essay Link</a>
+    
+                </p>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <section id="footer">
+        <div class="container">
+        <footer>
+            <p>
+                &copy; Aiden Allen 2023 &vert; Florida State University &vert; Department of Computer Science
+                </p>
+                <p>
+                    <a href="https://github.com/awa03" target="_blank">
+                        <img src="assets/github.png" alt="Github">
+                      </a>
+                      <a href="https://medium.com/@4376340" target="_blank">
+                        <img src="assets/1_s986xIGqhfsN8U--09_AdA.png" alt="Medium">
+                      </a>
+                      <a href="https://www.linkedin.com/in/aiden-allen-a7385421a/" target="_blank">
+                        <img src="assets/linked.webp" alt="LinkedIn">
+                      </a>
+                      
+            </p>
+        </footer>
+        </div>
+    </section>
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+         jQuery(document).ready(function () {
+              jQuery('.button').click(function() {
+                   targetName = jQuery(this).attr('href');
+                   targetLocation = jQuery(targetName).offset().top;
+                   jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
+                   return false;
+                   });
+              });
+    </script>
+    <script>
+        var link = document.getElementById("toggle-link");
+        var destination = "footer";
+    
+        link.addEventListener("click", function(e) {
+          e.preventDefault(); // Prevent the default anchor link behavior
+    
+          if (destination === "footer") {
+            scrollToElement("footer");
+            destination = "splash";
+          } else {
+            scrollToElement("splash");
+            destination = "footer";
+          }
+        });
+    
+        function scrollToElement(id) {
+          var element = document.getElementById(id);
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      </script>
+      <script src="script.js"></script>
+      <script>
+        var image = document.getElementById("flippable-image");
+    
+        image.addEventListener("click", function() {
+          image.classList.toggle("flipped");
+        });
+      </script>
+</body>
+
+
+
+</html>
