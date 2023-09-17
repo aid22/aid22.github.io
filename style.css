@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #FFFFFF;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
@@ -41,9 +42,10 @@ a:hover {
 }
 
 #splash {
+    
     background-color: #0969ae;
     height: 1000px;
-    background: url(assets/binary_code_banner_design_2510.jpg) no-repeat cover center top fixed;
+    background: url(assets/binary_code_banner_design_2510.jpg) cover no-repeat center top fixed;
     background-size: cover;
 }
 #home{
@@ -56,17 +58,20 @@ a:hover {
     padding-top: 250px;
     color: #FFFFFF;
     text-align: right;
+    
 }
 #title h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 4.4em;
     text-shadow: 3px 3px 5px #000000;
+    border-bottom: 3px solid #fffbfb
 }
 #title h2{
     font-size: 2em;
     font-style: italic;
     margin: 0 40px;
     text-shadow: 2px 2px #000000;
+
 }
 /*Container*/
 .container {
@@ -83,6 +88,15 @@ a:hover {
     
     justify-content: center;
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 
 #home .grid-item {
     padding-right: 100px;
@@ -419,6 +433,18 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 10px 30px 20px 20px;
+
+
+    
+
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+
+
+
      /* this padding defines the size of the buttons */ 
  }
  #projects {
