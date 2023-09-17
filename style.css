@@ -43,7 +43,7 @@ a:hover {
 #splash {
     background-color: #0969ae;
     height: 1000px;
-    background: url(assets/binary_code_banner_design_2510.jpg) no-repeat center top fixed;
+    background: url(assets/binary_code_banner_design_2510.jpg) no-repeat cover center top fixed;
     background-size: cover;
 }
 #home{
