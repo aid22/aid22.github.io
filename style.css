@@ -447,6 +447,25 @@ nav {
 
      /* this padding defines the size of the buttons */ 
  }
+ .DNR {
+    background-color: #081632;
+    border-radius: 8px;
+    padding: 5px;
+    padding-top: 5px;
+    text-align: center;
+ }
+ .DNR h3{
+    font-size: 1.2em;
+    font-weight: 800;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    background-color: #076978;
+    
+ }
+
  #projects {
     background-color: #2d56f7;
     padding-top: 50px;
