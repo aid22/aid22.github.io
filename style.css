@@ -469,12 +469,11 @@ nav {
  #projects {
     background-color: #2d56f7;
     padding-top: 50px;
-    
 }
  
  ul#menu li a.button:hover {
     color:#7094DB; /* change color when mouse hovers over */
-    background-color: rgba(200,200,200,0.5);
+    
  
  } 
  .popup {
