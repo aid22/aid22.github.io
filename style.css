@@ -73,6 +73,16 @@ a:hover {
     text-shadow: 2px 2px #000000;
 
 }
+.resumeDownload{
+    text-decoration: none;
+    background-color: #1a496f;
+    padding: 10px;
+   
+}
+.resumeDownload:hover{
+    background-color: #0d314f;
+    color: rgb(54, 118, 187);
+}
 /*Container*/
 .container {
     width: 1000px;
