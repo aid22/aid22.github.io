@@ -1,391 +1,334 @@
 <!DOCTYPE html>
-<html>
-
-<!--Site Declerations-->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Aiden Allen">
-    <meta name="keywords" content="Resume">
-    <title>Aiden Allen &vert; Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Aiden's Resume</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600;700&family=Varela+Round&display=swap" rel="stylesheet"> 
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="responsive.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!--Head-->
-    <body>
-        <section id="splash">
-          <nav>
-             <div class="container">
-                <ul id="menu"> <!-- creating navigation menu with unordered list -->
-                    <li><a href="#home" class="button">About Me</a></li>
-                    <li><a href="#education" class="button">Education</a></li>
-                    <li><a href="#work" class="button">Work Experience</a></li>
-                    <li><a href="#projects" class="button">Projects</a></li>
-                    <li>
-                        
-                        <a href="#" id="toggle-link">
-                            <span class="material-symbols-outlined" style="padding-top: 7px;">
-                                home
-                                </span>
-                          </a>
-                    </li>
-               </ul>
-             </div> <!-- end container div -->
-          </nav> <!-- end navigation -->
-      
-           <div id="title">
-             <div class="container">
-        
-                <h1>Aiden Allen</h1>
-                <h2>Resume</h2>
-             </div> <!-- end container div -->
-          </div> <!-- end title div --> 
-        </section>
+<div class="main_container">
+    <div class="nav_container">
+        <a href="#home" class="logo">aiden.</a>
+        <nav class="navigation">
+            <a href="#home" class="active">home</a>
+            <a href="#education">education</a>
+            <a href="#work">work experience</a>
+            <a href="#projects">projects</a>
+        </nav>
+    </div>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hey, I'm Aiden.</h1>
+            <h2>Aspiring Software Engineer</h2>
+                <div class="code-editor">
+                    <div class="line-numbers">
+                        1 <br> 2 <br> 3 <br> 4
+                    </div>
+                    <div id="editor" class="code-lines">
+                        I'm a <span class="syntax_highlight_keyword">Florida State University</span> student deeply passionate about computer science, specializing in <span class="syntax_highlight_keyword">C#
+                    </span>, <span class="syntax_highlight_keyword">C++</span>, and <span class="syntax_highlight_keyword"> Python</span> programming languages.
+                        <br>
+                        Email: awa22@fsu.edu
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <a href="mailto:chat.aiden.resume@gmail.com">hire me.</a>
+                    <a href="mailto:hireme.aiden.resume@gmail.com">let's talk.</a>
+                </div>
 
-    <section id="home">
-        <div class="container">
-            <div>
-                <h2>
-                    About Me
-                </h2>
-            
-                <p> 
-                    Hello! My name is Aiden Allen. I am an aspiring software engineer currently majoring in Computer Science at Florida State University.
-                    I have been programming since high school, and worked and posted numerous projects since.  As I progressed through middle school, my interests shifted towards mathematics, and I envisioned a future as a mathematician. However, it was during this time that I stumbled upon the world of technology, and it captivated me instantly. I would stay awake late into the night, engrossed in videos that taught me how to assemble computers, and I eagerly filled my mom's Amazon cart with essential components like CPUs, GPUs, motherboards, and PSUs.
-
-                    Driven by this newfound love for technology, I made a significant decision during my sophomore year of high school: to enroll in a programming course. This course primarily focused on the fundamentals of Python. I dedicated countless hours to crafting intricate programs that exceeded the course requirements. My final project for this high school course can be found <a href="https://github.com/awa03/FSU-Projects/blob/main/j.py">here</a>. 
-    
-                    <br><br>
-                    As I entered college for Computer Science I continued to watch tutorial after tutorial learning everything I can about programming. My Freshman year I taught myself HTML, and started taking notes through my website. The <a href="https://awa03.github.io/">site</a> and <a href="https://github.com/awa03/awa03.github.io">source code</a> of which are published on my github.
-                    <br><br>
-                    
-
-                    <strong>Email - </strong> awa22@fsu.edu <br>
-                    <strong>Phone - </strong> (813) 420 1146
-                    <br>
-
-                
-                </p>
         </div>
-        <div>
-            <h2>
-                <center>Programming Languages & Operating Systems</center>
-
-            </h2>
-        </div>
-        <div class="grid-container">
-            <div class="grid-item">
-                <ul>
-                    <li>C/C++</li>
-                    <li>C#</li>
-                    <li>HTML/CSS</li>
-                    <li>Python</li>
-                    <li>Mips Assembly</li>
-                    <li>Javascript</li>
-                    
-                    
-                </ul>  
-            </div>
-            <div class="grid-item">
-                <ul>
-                    
-                    <li>Linux</li>
-                    <li>Unix</li>
-                    <li>SQL</li>
-                    <li>NOSQL</li>
-                    <li>Mac</li>
-                    <li>Windows</li>
-                    
-                </ul>  
-            </div>
-            <div class="grid-item">
-                <ul>
-                <li>Word</li>
-                <li>Excel</li>
-                <li>Photoshop</li>
-                <li>Gimp</li>
-                <li>Final Cut X</li>
-                <li>Premiere Pro</li>
-                </ul>
-            </div>
-        </div>
-        </div>
-
     </section>
     <section id="education">
-        
-        <div class="container">
-            <h1>
-                Education
-            </h1>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <div class="text">
-                    <h1>Bachelor's FSU</h1>
-
-                    <p>
-                        I currently attend Florida State University.<br>
-                        <strong>Grade -</strong> Junior <br>
-                        <strong>Major -</strong> Computer Science <br>
-                        <strong>Minor -</strong> Philosophy of Science <br>
-                        I have been attending FSU since summer 2022. Through my short 
-                        time so far at FSU I have learned the importance of teamwork and 
-                        communication within the field of design. I plan to further
-                        my education beyond a bachelor's degree so that I may develop 
-                        my understanding of computer systems, and the ways in which 
-                        they interact with one another. 
-                    </p>
-                    </div>
-                
-                
-                    <img src="assets/Florida-State-Seminoles-basketball-logo.jpg" class="image im" height="220" width="330" alt="FSU BANNER">
-                    <br>
+        <div class="education-content">
+            <h1>education.</h1>
+            <div class="code-editor">
+                <div class="line-numbers">
+                    1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6<br>7 <br>
+                    8 <br> 9 <br> 10 <br> 11 <br> 12 <br> 13 <br> 14
                 </div>
-                <div class="grid-item">
-                    <div class="text">
-                    <h1>
-                        High School Diploma
-                    </h1>
-                    
+                <div id="editor-education" class="code-lines">
+                    <span class="syntax_highlight_keyword">class</span> Student {<br>
+                    &nbsp;&nbsp;<span class="syntax_highlight_keyword">public:</span><br>
+                    &nbsp;&nbsp;Education() { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;College-Name = <span class="syntax_green">"Florida State University"</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;High-School-Name = <span class="syntax_green">"Plant High School"</span>;<br>
+                    &nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;void Relevant-Courses(){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax_highlight_keyword">cout</span> << <span class="syntax_green">"Full Stack Development in C#" </span> << <span class="syntax_highlight_keyword">endl</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax_highlight_keyword">cout</span> << <span class="syntax_green">"Data Structures 1 & 2" << </span> <span class="syntax_highlight_keyword">endl</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax_highlight_keyword">cout</span> << <span class="syntax_green">"Software Engineering" << </span> <span class="syntax_highlight_keyword">endl</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax_highlight_keyword">cout</span> << <span class="syntax_green">"Software Engineering Capstone" << </span> <span class="syntax_highlight_keyword">endl</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax_highlight_keyword">cout</span> << <span class="syntax_green">"Intro To Web Development" << </span> <span class="syntax_highlight_keyword">endl</span>;<br>
+                    &nbsp;&nbsp;}
+                    <br>};
+                </div>
+                <div class="run-btn">
+                    <a onclick="runEducation()">Run Code</a>
+                </div>
+            </div>
+            <div id="education-output">
+                <h3>
+                    Florida State University
+                </h3>
+                <div class="fsu-info">
                     <p>
-                        
-                        <strong>Date Attended -</strong> 2018 - 2021<br>
-                        During my high school years, I actively pursued programming opportunities by enrolling in courses offered by the Florida Virtual School. I excelled academically and demonstrated advanced proficiency, leading to the decision to skip my senior year. As a result, I graduated in my junior year, while actively participating in extracurricular activities such as membership in the esteemed Mu Alpha Theta mathematics honor society at Robinson High School, along with various other clubs.
-
-                
+                        senior.<br>
+                        computer science & philosophy of science.<br>
                     </p>
-                    </div>
-                
-                    <img src="assets/panther.png" class="image" height="200" width="200" >
+                    <h4>
+                       skills.
+                    </h4>
+                    <ul>
+                        <li>C++ </li>
+                        <li>Full Stack Development in C# - MAUI / BLAZOR / Restful</li>
+                        <li>Python Development</li>
+                        <li>Unity Development</li>
+                        <li>Git / Github</li>
+                        <li>Team Management</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
     <section id="work">
-        <div class="container">
-            <div>
-                <h2>
-                    Work Experience
-                </h2>
-            </div>
-
-            <div class="item">
-                <h3>
-                    Scientiae
-                </h3>
-                <p>
-                    <strong>
-                        Title: Stem / Programming Instructor<br>
-                        Start Date: 05/01/24<br>
-                        <b>Current Occupation</b><br>
-                        My Experience:
-                    </strong>
-                    First day is 5/1/24.
-                    <br><br>
-                    <strong>
-
-                </p>
-
-            </div>
-            <br>
-
-            <div class="item">
-                <h3>
-                    Westshore Farmers Market
-                </h3>
-                <p>
-                    <strong>
-                        Title: Manager / Produce <br>
-                        Start Date: 01/09/20<br>
-                        Last Day: 06/22/22<br>
-                        My Experience: 
-                    </strong>
-                    At Westshore Farmers Market, we took pride in our commitment to sustainable agriculture and support for local businesses. As part of my role, I focused on building and maintaining strong relationships with vendors, offering them the necessary resources and support to thrive in the market. Moreover, I actively engaged with customers, creating a welcoming environment and addressing their needs and questions with attentiveness and friendliness.
-                    <br><br>
-                    <strong>
-                        Address:</strong> 3401 S West Shore Blvd, Tampa, FL 33629 <br>
-                        <strong> Phone:</strong> (813) 831 5444
-                    
-
-                </p>
-                
-            </div>
-            <br>
-            <div class="item">
-                
-                <h3>
-                    Fire House Subs
-                </h3>
-                <p>
-                    <strong>
-                        Title: Floor Staff<br>
-                        Start Date: 08/05/19<br>
-                        Last Day: 01/08/20<br>
-                        My Experience: 
-                    </strong>
-                    Throughout my employment at Fire House Subs I learned various skills.
-                    Skills such as team work, and cleanliness were useful in managing a high stress
-                    kitchen environment.
-                    <br><br>
-                    <strong>Address:</strong> 2227 S Dale Mabry Hwy, Tampa, FL 33629 <br>
-                    <strong>Phone:</strong> (813) 251 1921
-                   
-                </p>
-
-            </div>
+        <div class="work-content">
+            <h1>work experience.</h1>
         </div>
-
-    </section>
-
-    
-    <section id="projects">
-        <div class="container">
-            <div>
-                <h2>
-                    Projects
-                </h2>
-            </div>
-            <div class="grid-container">
-            
-            <!--Sheet to Excel-->
-            
-            
-            <div class="grid-item">
-                <h3>
-                    Do not Resuscitate
-                </h3>
-                <p>
-                    <strong>*In Development*</strong><br>
-                    The purpose of this project was to develop a cohesive project for my CEN4090L course. Within this project I worked with 4 other group mates to develop a game in which the player defeat waves of enemies in a tower defense style. I was responsible for developing the tutorial scenes, the save data, the shop, as well as the player. Additionally, I learned c# in order to complete this project. This project taught me valuble skills in teamwork, and communication.  
-                    <br>
-                    <a href="https://awa03.itch.io/inoculation" target=”_blank”>Download Game</a>
-                    <div class="DNR">
-                        <h3>
-                            In Game Screenshots
-                        </h3>
-                        <img src="assets/Incoulation1.png" class="image im" height="190" width="310" alt="FSU BANNER" style="padding-left: 10px;">
-                        <img src="assets/Incoulation2.png" class="image im" height="190" width="310" alt="FSU BANNER">
-                        <img src="assets/Incoulation3.png" class="image im" height="190" width="310" alt="FSU BANNER">
-                        <br>
-                        <img src="assets/Incoulation4.png" class="image im" height="190" width="310" alt="4" style="padding-left: 10px;">
-                        <img src="assets/Incoulation5.png" class="image im" height="190" width="310" alt="5">
-                        <img src="assets/Incoulation6.png" class="image im" height="190" width="310" alt="6">
-                    </div>
-                    <br>
-            </div>
-
-                <div class="grid-item">
-                    <h3>
-                        Canvas
-                    </h3>
-                    <p>
-                        <strong>*In Development*</strong><br>
-                        This project represents my endeavor to replicate the renowned grading platform "Canvas". Leveraging .NET MAUI, I meticulously implemented abstraction and separation of concerns through robust view models. While utilizing C# for the backend, I ensured seamless data management via REST API integration. This comprehensive approach exemplifies my first foray into full-stack development. Notably, this project's scope and complexity mirror that of platforms serving millions of users, underscoring my ability to tackle large-scale projects effectively.
-                        <br> <br>
-
-                        <a href="https://youtu.be/4iSGf0Y7fVw?si=hoiVwgJiNn-akOeM" target=”_blank”>Dev Log 2</a>
-                        <br>
-                        <a href="https://github.com/awa03/Canvas" target=”_blank”>Canvas App</a>
-                    </p>
+        <div class="exp-1">
+            <h2 id="header">young engineer's<span id="cursor">|</span></h2>
+            <div class="code-editor">
+                <div class="line-numbers">
+                    1 <br> 2 <br> 3 <br> 4
                 </div>
-
-            <div class="grid-item">
-                <h3>
-                  German Quizzr
-                </h3>
-                <p>
-                    The German Learning Assistant project aims to facilitate language learning, particularly in German, by leveraging the benefits of repetition. It integrates programming with language learning, utilizing the DearPyGui library for GUI development and the Googletrans library for translation. As someone who has struggled with learning languages, I discovered that repetition is key to my learning process. Combining my passion for programming with the desire to learn German, this project emerged as a solution to my language learning challenges.
-                    <br> <br>
-                    <a href="https://github.com/awa03/German-Quiz-Game" target=”_blank”>Quiz Game Repository!</a>
-                    
-                </p>
-            </div>
-
-
-            <div class="grid-item">
-                <h3>
-                    Spell Checker
-                </h3>
-                <p>
-                    This project was developed for my COP4530 course (Data structures 2). This project encompasses a hashtable library, and a spell checker, both of which were created for the purpose of this project. The spell checker is able to read in a dictionary, and compare it to a text file. The spell checker will then output the words that are not in the dictionary, and prompt the user to correct it (using FTXUI library). This project taught me valuable skills in data structures, and the importance of efficient code.
-                    <br><br>
-                    <a href="https://github.com/awa03/spellChecker" target=”_blank”>Spell Check</a>
-                    
-                </p>
+                <div id="editor-ye" class="code-lines">
+                    position = <span class="syntax_green">"Stem Instructor"</span>; <br>
+                    description = <br><span class="syntax_green">"<br>During my time as an educator, I honed my skills in instructing and mentoring children in various programming languages including Python, C#, C++, and Java.<br>
+                    Through engaging lesson plans and hands-on activities, I effectively communicated complex concepts to young learners, fostering their interest and understanding of computer science principles.<br>
+                    Notably, I spearheaded a captivating chatbot project, leveraging API usage and Flask applications, which served as a dynamic platform for sharing practical insights into software development with my students.<br>"</span>;
+                </div>
             </div>
         </div>
-        </div>
-
-    </section>
-    <section id="footer">
-        <div class="container">
-        <footer>
-            <p>
-                &copy; Aiden Allen 2023 &vert; Florida State University &vert; Department of Computer Science
-                </p>
-                <p>
-                    <a href="https://github.com/awa03" target="_blank">
-                        <img src="assets/github.png" alt="Github">
-                      </a>
-                      <a href="https://medium.com/@4376340" target="_blank">
-                        <img src="assets/1_s986xIGqhfsN8U--09_AdA.png" alt="Medium">
-                      </a>
-                      <a href="https://www.linkedin.com/in/aiden-allen-a7385421a/" target="_blank">
-                        <img src="assets/linked.webp" alt="LinkedIn">
-                      </a>
-                      
-            </p>
-        </footer>
+        <div class="exp-2">
+            <h2>westshore farmers market</h2>
+            <div class="code-editor">
+                <div class="line-numbers">
+                    1 <br> 2 <br> 3 <br> 4
+                </div>
+                <div id="editor-wf" class="code-lines">
+                    position = <span class="syntax_green">"Manager / Produce Stocker"</span>; <br>
+                    description = <br><span class="syntax_green">"<br>
+                    At Westshore Farmers Market, we took pride in our commitment to sustainable agriculture and support for local businesses.<br>
+                    As part of my role, I focused on building and maintaining strong relationships with vendors, offering them the necessary resources and support to thrive in the market.<br>
+                    Moreover, I actively engaged with customers, creating a welcoming environment and addressing their needs and questions with attentiveness and friendliness. <br>"</span>;
+                </div>
+            </div>
         </div>
     </section>
-    <script src="jquery.js"></script>
-    <script type="text/javascript">
-         jQuery(document).ready(function () {
-              jQuery('.button').click(function() {
-                   targetName = jQuery(this).attr('href');
-                   targetLocation = jQuery(targetName).offset().top;
-                   jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
-                   return false;
-                   });
-              });
-    </script>
-    <script>
-        var link = document.getElementById("toggle-link");
-        var destination = "footer";
-    
-        link.addEventListener("click", function(e) {
-          e.preventDefault(); // Prevent the default anchor link behavior
-    
-          if (destination === "footer") {
-            scrollToElement("footer");
-            destination = "splash";
-          } else {
-            scrollToElement("splash");
-            destination = "footer";
-          }
-        });
-    
-        function scrollToElement(id) {
-          var element = document.getElementById(id);
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      </script>
-      <script src="script.js"></script>
-      <script>
-        var image = document.getElementById("flippable-image");
-    
-        image.addEventListener("click", function() {
-          image.classList.toggle("flipped");
-        });
-      </script>
-</body>
-</body>
+    <section id="projects">
+        <div class="projects-content">
+            <h1>
+                projects.
+            </h1>
+            <div class="projects-items">
+            <ul>
+                <li class="card">
+                    <a target="_blank" href="https://github.com/awa03/InoculationBetaApp">
+                    <h1>Do Not Resuscitate</h1>
+                        <div class="skills">
+                            <p style="background: rgba(89,8,94,0.73)">C#</p>
+                            <p>Unity</p>
+                            <p>UX / UI</p>
+                            <p>UML</p>
+                            <p style="background: rgba(155,31,40,0.73)">Agile</p>
+                        </div>
+                    <div class="code-editor">
+                        <div class="line-numbers">
+                            1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
+                        </div>
+                        <div id="editor-dnr" class="code-lines">
+                            description =
+                            <span class="syntax_green">"<br>
+                                A tower defense game created using<br> the unity engine.
+                                Through this project <br>I learned
+                                varies skills such as agile<br>
+                                development, uml documentation,<br>
+                                and the c# language. My contributions<br>
+                                to this project encompass: art,<br>
+                                player movement, level design,<br>
+                                dialogs, shop mechanics, save
+                                and load<br> game mechanics, and
+                                game play <br>functionality.<br>
+                            "</span>;
+                        </div>
+                    </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a target="_blank" href="https://github.com/awa03/Canvas">
+                    <h1>Canvas</h1>
+                        <div class="skills">
+                            <p style="background: rgba(89,8,94,0.73)">C#</p>
+                            <p>MAUI</p>
+                            <p>RestAPI</p>
+                            <p>Git</p>
+                            <p>UX / UI</p>
+                            <p style="background: rgba(155,31,40,0.73)">Agile</p>
+                        </div>
+                    <div class="code-editor">
+                        <div class="line-numbers">
+                            1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
+                        </div>
 
+                        <div id="editor-canv" class="code-lines">
+                            description =
+                            <span class="syntax_green">"<br>
+                                Canvas is a replica of the popular<br>
+                                Student grading platform 'Canvas'.<br>
+                                This project was created in C# MAUI.<br>
+                                Through this project I gained<br>
+                                experience using software design <br>
+                                pattern's and in MVVM Development. The<br>
+                                focus of this project was to follow<br>
+                                good software design principles.<br>
+                                This project serves as a testimate to <br>my
+                                ability to create fullstack<br> applications.
 
+                            "</span>;
+                        </div>
+                    </div>
+                    </a>
+                </li>
+                <li class="card">
+
+                    <a href="https://github.com/awa03/YoungEngineers-ChatBot-Project">
+                    <h1>Chat Bot Tutorial</h1>
+                        <div class="skills">
+                            <p style="background: rgba(181,183,24,0.73); color: #1e2125">Python</p>
+                            <p style="background: #478c96; color: #1e2125">Flask</p>
+                            <p>Git</p>
+                            <p>Html / Css</p>
+                            <p style="background: #0a2e3d">Education</p>
+                        </div>
+                    <div class="code-editor">
+                        <div class="line-numbers">
+                            1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
+                        </div>
+                        <div id="editor-chat-bot" class="code-lines">
+                            description =
+                            <span class="syntax_green">"<br>
+                                Experienced educator proficient in Python<br>
+                                utilized Flask API to teach students at<br>
+                                Young Engineers how to build a chatbot.<br>
+                                Leveraged Groq API for enhanced responses,<br>
+                                imparting vital skills in AI development<br>
+                                to prepare students for evolving<br>
+                                technological landscapes.<br>
+                            "</span>;
+                        </div>
+                    </div>
+
+                    </a>
+                </li>
+                <li class="card">
+                    <a target="_blank" href="https://github.com/awa03/spellChecker">
+                    <h1>Spell Check</h1>
+                        <div class="skills">
+                            <p style="background: #0879d7; ">C++</p>
+                            <p>FTXUI</p>
+                            <p>Data Structures</p>
+                            <p>Algorithms</p>
+                        </div>
+                    <div class="code-editor">
+                        <div class="line-numbers">
+                            1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
+                        </div>
+                        <div id="editor-spellc" class="code-lines">
+                            description =
+                            <span class="syntax_green">"<br>
+                                Developed a C++ spell checker application<br>
+                                featuring a custom hash set, <br>designed as extra
+                                credit for my Data<br>
+                                Structures 2 course. Created a proprietary<br>
+                                algorithm to identify and suggest<br>
+                                replacements for misspelled words within<br>
+                                text files, showcasing proficiency in<br>
+                                both data structures and algorithm <br>design.
+                                <br>
+                            "</span>;
+                        </div>
+                    </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a target="_blank" href="https://github.com/awa03/MazeSolvingAlgorithms">
+                    <h1>Maze Solving Visualizer's</h1>
+                        <div class="skills">
+                            <p style="background: rgba(181,183,24,0.73); color: #1e2125">Python</p>
+                            <p>Pygame</p>
+                            <p>Algorithms</p>
+                        </div>
+                    <div class="code-editor">
+                        <div class="line-numbers">
+                            1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
+                        </div>
+                        <div id="editor-maze" class="code-lines">
+                            description =
+                            <span class="syntax_green">"<br>
+                                Engineered a Python application using<br>
+                                Pygame, integrating Depth-First Search<br>
+                                and Dijkstra's search algorithms to<br>
+                                navigate mazes. Designed for user-drawn<br>
+                                or randomly generated mazes, demonstrating<br>
+                                expertise in pathfinding algorithms<br>
+                                and interactive graphical interfaces.<br>
+                            "</span>;
+                        </div>
+                    </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a target="_blank" href="https://github.com/awa03/RedditEngine">
+                    <h1>Reddit Engine</h1>
+                        <div class="skills">
+                            <p style="background: rgba(89,8,94,0.73)">C#</p>
+                            <p>MAUI</p>
+                            <p>RestAPI</p>
+                            <p>Git</p>
+                            <p>UX / UI</p>
+                        </div>
+                    <div class="code-editor">
+                        <div class="line-numbers">
+                            1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
+                        </div>
+                        <div id="editor-reddit" class="code-lines">
+                            description =
+                            <span class="syntax_green">"<br>
+                                Crafted a Reddit search engine employing<br>
+                                HTTP requests and web scraping techniques,<br>
+                                with a C# UI built on Maui framework for<br>
+                                enhanced user experience. Seamlessly<br>
+                                combines backend functionality with<br>
+                                modern UI design, showcasing proficiency<br>
+                                in both web technologies and desktop<br>
+                                application development.
+                            <br>"</span>;
+                        </div>
+                    </div>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </section>
+
+</div>
+<script src="script.js"></script>
+</body>
 </html>

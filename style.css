@@ -1,537 +1,469 @@
-
-
-body {
+* {
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-h1 {
-    font-size: 2.5em;
+    box-sizing: border-box;
+    color: #fafbfc;
 }
 
-p {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin-bottom: 15px;
-}
-
-h2 {
-    padding: 20px 0;
-    font-size: 2.2em;
-   
-}
-
-h3 {
-   font-size: 1.2em;
-   padding: 20px 0;
-   font-weight:bold;
-}
-a:link {
-    color: #bfefff;
-    text-decoration:none;
-}
- 
-a:visited {
-    color: #bfefff;
-}
-
-a:hover {
-    color: #4372ff;
-}
-
-#splash {
-    
-    background-color: #0969ae;
-    height: 1000px;
-    background: url(assets/binary_code_banner_design_2510.jpg) cover no-repeat center top fixed;
-    background-size: cover;
-}
-#home{
-   background-color: #00385F;
-  
-   padding: 30px 0 50px 0;
-}
-#title {
-    width: 100%;
-    padding-top: 250px;
-    color: #FFFFFF;
-    text-align: right;
-    
-}
-#title h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 4.4em;
-    text-shadow: 3px 3px 5px #000000;
-    border-bottom: 3px solid #fffbfb
-}
-#title h2{
-    font-size: 2em;
-    font-style: italic;
-    margin: 0 40px;
-    text-shadow: 2px 2px #000000;
-
-}
-.resumeDownload{
-    text-decoration: none;
-    background-color: #1a496f;
-    padding: 10px;
-   
-}
-.resumeDownload:hover{
-    background-color: #0d314f;
-    color: rgb(54, 118, 187);
-}
-/*Container*/
-.container {
-    width: 1000px;
-    margin: 0 auto;     /*Center*/
-    overflow: hidden;
-}
-#home .grid-container{
-    margin-top: 10px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap:10px;
-    
-    justify-content: center;
-}
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
-
-#home .grid-item {
-    padding-right: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    background-color: rgba(255, 255, 255, 0.1);
-}
-#footer {
-    background-color: #003840;
-    font-size: 1.1em;
-    color: #cffbfc;
-    text-align: center;
-    padding: 50px;
-}
-
-
-/* ------ window widths smaller than 1200px - the original container size + margins ------ */
-
-@media screen and (max-width: 1200px) {
-	/* Switch from static 1000px container to a fluid 90% container at smaller display sizes */
-    .container {
-        width: 90%;
-    }
-
-    /* Shrink navigation button text to standard size */
-    ul#menu li a.button {
-        font-size:1.2em;
-    }
-
-    /* Shrunk navigation button button left and right padding so stay on one line */
-    ul#menu li a.button {
-        padding-left: 20px;
-        padding-right: 75px;
-    }
-
-    /* Shrink splash area, and background image for smaller displays */
-    #splash {
-        height: 700px;
-        background-size: 1460px;
-    }	
-
-    /* Keep the site title from being pushed down off the display */
-    #title{
-        padding-top: 200px; 
-    }
-
-    /* Shrink font title on smaller screens */
-    #title h1 {
-        font-size:2.6em;
-    }
-
-    /* Force embedded youtube video to shrink width with display size */
-    /* can't do anything about height */
-    iframe {
-        width: 100%;
-    }
-
-    /* Shrink the blockquote text on smaller displays*/
-    #legacy blockquote {
-        width: 30%;
-        font-size:1.4em;
-    }
-
-} /* end first media query */
-
-/* ------ window widths smaller than 768px - tablets ------ */
-
-@media screen and (max-width: 768px) {
-	
-    /* adjust button left and right padding so buttons don't wrap to 2nd row on smaller displays */
-    ul#menu li a.button {
-        font-size:0.99em;
-        padding-left: 15px;
-        padding-right: 15px;
-    } 
-
-    /* Shrink splash area, and background image for smaller displays */
-    #splash {
-    height: 600px;
-    background-size: 1060px;
-    }	
-
-    /* shrink site title to fit in smaller splash section */
-    #title h1 {
-        font-size:2.1em;
-    }
-
-    /* shrink site byline to fit in smaller splash section */
-    #title h2 {
-        font-size:1.5em;
-    }
-    /* reducing amount of padding at top of first section, so it is within view when page loads */
-    #life {
-        padding-top: 40px;
-    }
-
-    /* increase image size for better viewing on a smaller screen */
-    #life img.right {
-        max-width: 50%;
-    }
-
-    /* increase line height of list, so text does not cram together */
-    #paintings li {
-        font-size: 1.2em;
-        line-height: 1.5em;
-    }
-
-    /* too many columns don't look good on small displays, so reduce amount of columns */
-    #paintings .grid-container {
-        grid-template-columns: auto auto; /* change the number of values to match the amount of desired columns */
-    } 
-    
-    /* prevent subheading from cramming into video */
-    #legacy h3 {
-        padding-top: 20px;
-    }
-    
-    /* increase references font size for easier reading */
-    #legacy ul {
-        font-size:1.2em;
-    }
-
-    /* stack items in a grid into a single column */
-    #legacy .grid-container {
-        grid-template-columns: auto; /* change the number of values to match the amount of desired columns */
-    }
-
-} /* end second media query */
-
-/* ------ window widths smaller than 480px - smartphones ------ */
-
-@media screen and (max-width: 480px) {
-
-    /* adjust button font size and left and right padding so buttons don't wrap to 2nd row on smaller displays */
-    ul#menu li a.button {
-        font-size:0.8em;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-
-    /* justify text for smaller screens for easier reading in column format */
-    p {
-        text-align: justify;
-    }
-    /* Shrink splash area, and background image for smaller displays */
-    #splash {
-        height: 340px;
-        background-size: 600px;
-    }
-
-    /* reduce padding so title is not pushed down onto the page */
-    #title {
-        padding-top:150px;
-    }
-
-    /* shrink site title to fit in smaller splash section */
-    #title h1 {
-        font-size: 1.4em;
-    }
-
-    /* shrink site byline to fit in smaller splash section */
-    #title h2 {
-        font-size:1em;
-    }
-
-    /* shrink section headings and subheadings for smaller screens */
-    h2 {
-        font-size:1.8em;
-    }
-
-    h3{
-        font-size:1.2em;
-    }
-
-    /* reduce first section padding on smaller screens, so more content is visible */
-    #life {
-        padding:30px 0 40px;
-    }
-
-    /* removing float to center and enlarge image on bigger screens */
-    #life img.right {
-        float:none;
-        max-width: 90%;
-        margin:0 auto;
-        padding:15px;
-    }
-
-
-    /* reduce second section padding on smaller screens, so more content is visible */
-    #paintings {
-        padding:60px 0 40px;
-    }
-
-    /* stack items in a grid into a single column */
-    #paintings .grid-container {
-        grid-template-columns: auto; /* change the number of values to match the amount of desired columns */
-    }
-
-    /* reduce third section padding on smaller screens, so more content is visible */
-    #legacy {
-        padding:60px 0 40px;
-    }   
-
-    #legacy blockquote {
-        float:none;
-        width:90%;
-        margin:30px auto;
-        padding:10px;
-        font-size:1.2em;
-    }
-
-    /* prevent subheading from cramming into video */
-    #legacy h3 {
-        padding-top: 30px;
-    }
-
-    /* increase references font size for easier reading */
-    #legacy ul {
-        font-size:1.3em;
-    }
-
-    /* do not justify footer text, keep it centered */
-    #footer p {
-        text-align:center;
-    }
-} /* end third media query */
-#footer img{
-    background-color: rgba(255, 255, 255, 0.2);
-   padding:10px; 
-   border-radius: 20px;
-   max-height: 50px;
-   
-}
-#education .grid-container {
-    margin-top: 10px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto; /* Two columns: one for text, one for image */
-    gap: 100px;
-    margin-bottom: 70px;
-  }
-  
-  #education .grid-item {
-
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  
-  #education .grid-item .text {
-    margin-right: 10px; /* Add margin to create space between text and image */
-  }
-
-  
-#education{
-    background-color: #001242;
-    
-    padding-top: 50px;
-}
-#education .im{
-    margin-top: 20%;
-    
-    
-}
-#education .image {
-    display: flex;
-    margin-left: 12%;
-    justify-content: center;
-    align-items: center;
-}
-#projects .grid-container{
-    margin-top: 10px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto ;
-    gap:10px;
-    justify-content: center;
+body {
+   font-family: Arial, Helvetica, sans-serif;
+    background-color: #1e2125;
     margin-bottom: 50px;
 }
 
-#projects .grid-item {
-    padding: 20px;;
-    
-
-    background-color: rgba(255, 255, 255, 0.1);
+.main_container {
+    padding: 4px;
+    background-color: #1c1f23;
+    margin:4px;
 }
-#work{
-    background-color: #005E7C;
-   
-    padding: 30px 0 50px 0;
- }
- .item {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
- }
-nav {
-    background-color: rgba(4, 27, 91, .8); /* change fourth number to adjust transparency */
-    text-align: center; /* center buttons inside navigation area */
-    position: fixed; /* fixes navigation area to top of screen, will always be present even when user scrolls */
-    top: 0; /* aligns navigation bar to top of splash area */
+
+.nav_container {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 75px;
-    overflow:hidden; /* if button padding gets too high, clip the bottom */
- }	
- 
- ul#menu {
-    display:inline-block; /* display as inline block item without line break between */
-    padding: 0; /*removes left indentation from list items */
-     /* adjust padding top to adjust nav bar vertical position */
- 
- } 
- ul#menu li {
-    list-style: none; /* eliminates bullets */ 
-    float: left; /* changes list from vertical to horizontal */
-     /* adjust padding so button text is centered */
- } 
-  .back{
-    background-color: #4372ff;
-    border-radius: 8px;
- }
- .flipped {
-    transform: rotate(180deg);
-    transition: transform 0.2s ease;
-  }
- ul#menu li a.button {
-    color: white; /* color of button link text */
-    font-size: 1.2em;
-    font-weight:800;
+    padding: 20px 10%;
+    background-color: #252b31;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-family: "Source Code Pro", serif;
+    font-size: 32px;
+    color: #fafbfc;
     text-decoration: none;
+    font-weight: 600;
+}
+
+.navigation a {
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.navigation a:hover {
+    color: rgba(255, 255, 255, 0.1);
+}
+.navigation .active {
+    text-shadow: 0 0 0.4em #5adeff;
+    user-select: none;
+    white-space: nowrap;
+    filter: blur(0.004em);
+}
+.navigation .active:hover {
+    filter: none !important;
+    text-shadow: 0 0 0 0.1em #56bde1;
+}
+.home {
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 10px 30px 20px 20px;
-
-
-    
-
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-
-
-
-     /* this padding defines the size of the buttons */ 
- }
- .DNR {
-    background-color: #081632;
-    border-radius: 8px;
-    padding: 5px;
-    padding-top: 5px;
-    text-align: center;
- }
- .DNR h3{
-    font-size: 1.2em;
-    font-weight: 800;
-    color: white;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    background-color: #076978;
-    
- }
-
- #projects {
-    background-color: #2d56f7;
-    padding-top: 50px;
+    padding: 0 10%;
 }
- 
- ul#menu li a.button:hover {
-    color:#7094DB; /* change color when mouse hovers over */
-    
- 
- } 
- .popup {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    line-height: normal;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .popup-content {
-    background-color: #005851;
-    margin: 10% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    color:white;
-  }
-  .custom-button {
-    margin-top: 10px;
-    background-color: rgb(65, 65, 249);
-    color: white;
+.home-content {
+   max-width: 600px;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.home-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content p {
+    font-family: 'Kanit', sans-serif;
+    margin: 10px 0 15px 0;
+    line-height: 1.2;
     font-size: 16px;
-    border-radius: 50px;
-  }
-  
-  .custom-button:hover {
-    background-color: darkblue;
-  }
-  
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
+}
+
+.home-content .btn-box {
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 5px;
+    font-size: 19px;
+    color: white;
     text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
     cursor: pointer;
-  }
-  
+    margin-right: 10px;
+    z-index: 1;
+}
+/* styles.css */
+.btn-box a:nth-child(2) {
+   background-color: transparent;
+}
+
+.btn-box a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #00abf0;
+    z-index: -1;
+    transition: 3s;
+}
+
+.btn-box a:hover:before {
+    width: 100%;
+    background-color: #00abf0;
+}
+
+/* Code editor container */
+.code-editor {
+    border: 3px solid #1e252f;
+    background-color: #1a1f25;
+    padding: 10px;
+    display: flex;
+    font-family: 'Source Code Pro', Courier, monospace;
+    margin: 10px 0 10px 0;
+}
+
+/* Line numbers container */
+.line-numbers {
+    counter-reset: line;
+    padding-right: 10px;
+    text-align: right;
+    width: 10%;
+}
+
+/* Line number styling */
+.line-numbers div {
+    counter-increment: line;
+    line-height: 1.6em;
+}
+
+/* Code lines container */
+.code-lines {
+    flex-grow: 1;
+}
+
+.syntax_highlight_keyword {
+    color: #00abf0;
+
+}
+
+/* Code line styling */
+.code-line {
+    padding-left: 10px;
+    line-height: 1.6em;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+/* Styling for the paragraph displaying editor content */
+#editor-content {
+    margin-top: 20px; /* Adjust spacing as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+#education {
+    margin-top: 30px;
+    background-color: #282b2f;
+    height: 100vh;
+    border-radius: 10px;
+}
+.education-content {
+    padding: 30px;
+}
+.education-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.run-btn {
+    margin: 10px 0 10px 0;
+}
+
+.run-btn a {
+    background-color: #1e252f;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.run-btn a:hover {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#education-output {
+    display: none;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #1a1f25;
+    background-color: #1e252f;
+}
+#education-output h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#education-output .fsu-info {
+    width: 100%;
+    padding: 10px;
+}
+
+#education-output p {
+    margin-bottom: 10px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.fsu-info h4 {
+    font-size: 22px;
+}
+#education-output ul  {
+    padding-top: 15px;
+    margin-bottom: 50px;
+}
+
+#education-output li {
+    float: left;
+    list-style-type: none;
+    font-size: 15px;
+    padding: 7px;
+    background: #1a1f25;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#work {
+    margin-top: 30px;
+    background-color: #23282d;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#work h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+.work-content {
+    padding: 30px;
+}
+#work .exp-1{
+   background-color: #1a1f25;
+    padding: 20px;
+    margin: 0 30px 30px 30px;
+}
+.exp-1 h2{
+}
+#cursor {
+    display: inline-block;
+    visibility: visible;
+    animation: blink-animation 1.5s step-end infinite;
+}
+
+@keyframes blink-animation {
+    50% { visibility: hidden; }
+}
+
+#work .exp-2 {
+    background-color: #1a1f25;
+    padding: 20px;
+    margin: 30px;
+}
+#work .code-editor {
+    margin-top: 15px;
+    background-color: #1e2125;
+}
+.syntax_green {
+    color: greenyellow;
+}
+
+#projects {
+    margin-top: 30px;
+    background-color: #1f2225;
+    border-radius: 10px;
+    height: fit-content;
+}
+#projects h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.projects-content {
+    padding: 30px;
+    height: 550px;
+    margin-bottom: 50px;
+}
+
+.projects-content ul {
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    background-color: #1a1f25;
+    list-style-type: none;
+    height: 500px;
+}
+
+.projects-content li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+* li {
+    list-style-type: none;
+}
+
+li * {
+    list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+
+.projects-items {
+    height: 430px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-decoration: none;
+
+    .card {
+        display: inline-block;
+    }
+}
+
+li h1 {
+    text-align: center;
+}
+
+.card {
+}
+
+.card .code-editor{
+    margin-top: 20px;
+    font-size: 15px;
+    height: fit-content;
+    width: 450px;
+    background-color: #242a31;
+    margin-right: 10px;
+    padding: 20px 20px 10px 20px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+.card .code-editor .code-lines {
+    width: 20px;
+}
+.bg_blue {
+    color: #46b2d0;
+}
+
+
+.projects-content h1 {
+    margin-bottom: 20px;
+}
+
+.projects-content p {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #313438;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+    .main_container {
+        padding: 0;
+        margin: 0;
+    }
+    .navigation a{
+        font-size: 18px;
+        margin-right: 0;
+    }
+    .logo {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    .home-content h1 {
+        font-size: 2em;
+    }
+    .home-content h2 {
+        font-size: 1.5em;
+    }
+    .home-content {
+        width: 100%;
+    }
+    .btn-box a{
+        width: 120px;
+    }
+    .code-editor {
+        font-size: 15px;
+    }
+
+    .projects-content {
+        margin: 10px;
+        padding: 10px;
+    }
+    #education {
+        height: 150vh;
+    }
+    #education-output {
+        height: 450px;
+    }
+
+    #education-output h3 {}
+    #education-output .fsu-info {
+        font-size: 20px;
+    }
+    #education-output ul li {
+       margin-bottom: 10px;
+    }
+
+    .fsu-info {
+        font-size: medium;
+    }
+
+    .education-content {
+        padding: 5px;
+    }
+
+    .education-content .code-editor {
+        width: 100%;
+    }
+    .run-btn {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
