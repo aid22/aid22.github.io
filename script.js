@@ -49,3 +49,16 @@ function blinkCursor() {
 }
 setInterval(blinkCursor, 1000);
 
+window.onload = function() {
+  toggle_popup();
+};
+
+function toggle_popup() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const myDiv = document.getElementById('myPopup');
+    myDiv.style.display = 'block'; // Makes the div visible on load
+});
