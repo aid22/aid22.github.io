@@ -1,420 +1,242 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html data-theme="dark">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <title>Aiden's Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/output/index-style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-</head>
-<body>
-<div class="main_container">
-    <div class="nav_container">
-        <a href="#home" class="logo">aiden.</a>
-        <nav class="navigation">
-            <a href="#home" class="active">home</a>
-            <a href="#education">education</a>
-            <a href="#work">work experience</a>
-            <a href="#projects">projects</a>
-        </nav>
-    </div>
-    <section class="home" id="home">
-        <div class="home-content">
-          <div class="popup" onclick="toggle_popup()">
-            <h1>Hey, I'm Aiden.</h1>
-            <span class="popuptext" id="myPopup">Learning New Things Everyday</span>
-            </span>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#000000] overflow-x-hidden m-0 p-0">
+    <section class="bg-[#1D1F22] min-h-screen" id="home">
+      <div class="navbar bg-base-300 w-full fixed z-50">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-2xl">aiden.</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 space-x-10 no-underline u">
+            <li><a href="#home" class="no-underline">Home</a></li>
+            <li><a href="#education" class="no-underline">Education</a></li>
+            <li><a href="#experience" class="no-underline">Experience</a></li>
+            <li><a href="#projects" class="no-underline">Projects</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <progress id="scrollProgress" class="progress w-56" value="0" max="100"></progress>
+        </div>
+      </div>
+      <div class="hero bg-base-200 min-h-screen flex flex-col lg:flex-row justify-center items-center">
+        <img
+        src="./me.jpeg"
+        class="max-w-xs lg:max-w-sm rounded-3xl shadow-2xl mr-0 lg:mr-10 justify-center mt-16" />
+        <div class="text-center lg:text-left">
+          <h1 class="text-4xl lg:text-6xl text-white font-bold lato-bold mb-4">Hey, I'm Aiden!</h1>
+          <h2 class="text-3xl lg:text-4xl text-blue-500 font-bold mb-4">Full Stack Engineer</h2>
+          <div class="mockup-code text-sm lg:text-base">
+            <pre data-prefix="1"><code>I'm a <span class="text-blue-500">Florida State University</span> student deeply passionate</code></pre>
+            <pre data-prefix="2"><code>about computer science, specializing in <span class="text-blue-500">C#</span>, <span class="text-blue-500">C/C++</span>, <span class="text-blue-500">Go</span></code></pre>
+            <pre data-prefix="3"><code>and <span class="text-blue-500">Python</span> programming languages</code></pre>
+            <pre data-prefix="4"><code>Email := <span class="text-green-400">"awa22@fsu.edu"</span></code></pre>
+          </div>
+          <button class="btn bg-gray-800 mt-4">Contact Me!</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="min-h-screen pb-20 rounded-4xl bg-opacity-10 bg-blue-200">
+      <div class="flex w-full flex-col text-3xl lg:text-4xl ml-5 lg:ml-10 p-10 pt-20 pb-20">
+        Education
+      </div>
+      <div class="mockup-code mx-5 lg:mx-20 flex bg-gray-800 p-10 lg:p-20 sm:m-10">
+        <div class="hero flex flex-col w-full">
+          <div class="hero-content flex-col lg:flex-row w-full">
+            <img
+            src="./fsu.webp"
+            class="max-w-s lg:max-w-m lg:text-2xl rounded-lg shadow-2xl mr-0 lg:mr-10 mb-5 lg:mb-0" />
+            <div>
+              <pre class=" text-5xl font-bold lato-bold mb-10 sm:text-l sm:text-right lg:text-left">Florida State University</pre>
+              <pre data-prefix="1"><code class="lg:text-xl">I'm currently a <span class="text-blue-500">Senior</span> Computer Science student</code></pre>
+              <pre data-prefix="2"><code class="lg:text-xl">at FSU. FSU has provided me with a strong technical</code></pre>
+              <pre data-prefix="3"><code class="lg:text-xl">foundation and the ability to think critically</code></pre>
+              <pre data-prefix="4"><code class="lg:text-xl">and creatively about problem-solving.</code></pre>
+            </div>
+          </div>
+          <div class="flex w-full justify-center items-center my-10">
+            <div class="divider border-blue-500 w-5/6 divider-primary lg:text-2xl mt-10 lato-bold">Relevant Courses</div>
+          </div>
+          <div class="flex flex-wrap justify-center items-center gap-1 w-full mt-4">
+            <span class="btn w-[150px] lg:w-[220px]">Data Science</span>
+            <span class="btn w-[150px] lg:w-[220px]">Intro To AI</span> 
+            <span class="btn w-[150px] lg:w-[220px]">Data Structures 2</span> 
+            <span class="btn w-[150px] lg:w-[220px]">Full Stack Development</span> 
+            <span class="btn w-[150px] lg:w-[220px]">Software Engineering</span> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="min-h-screen bg-slate-900 p-10">
+      <div class="flex w-full flex-col text-3xl lg:text-4xl ml-5 lg:ml-10 p-10 pt-20 ">
+        Experience
+      </div>
+      <div class="mockup-code bg-slate-800 mx-10 my-5 p-20">
+        <div class="absolute right-3 top-3">
+          <button class="btn bg-gray-900" onclick="ye_modal.showModal()">Run Code</button>
+        </div>
+        <pre class="pt-10"><code class="text-xl p-2">void YoungEngineers(){</code></pre>
+        <pre ><code class="text-xl p-2">&nbsp;&nbsp;cout << <span class="text-green-500">"Developed a full-stack website using Go, HTML, CSS, JavaScript, and Tailwind CSS.\n"</span>;</code></pre>
+        <pre ><code class="text-xl p-2">&nbsp;&nbsp;cout << <span class="text-green-500">"Integrated and trained an AI chatbot to answer company-specific questions.\n"</span>;</code></pre>
+        <pre ><code class="text-xl p-2">&nbsp;&nbsp;cout << <span class="text-green-500">"Created an admin panel for staff to add/manage summer camp projects.\n"</span>;</code></pre>
+        <pre ><code class="text-xl p-2">&nbsp;&nbsp;cout << <span class="text-green-500">"Built a scalable backend to ensure fast, reliable performance.\n"</span>;</code></pre>
+        <pre ><code class="text-xl p-2">}</code></pre>
+      </div>
+      <div class="mockup-code bg-slate-800 mx-10 my-10 p-20">
+        <div class="absolute right-3 top-3">
+          <button class="btn bg-gray-900" onclick="aim_modal.showModal()">Run Code</button>
+        </div>
+        <pre class="pt-10"><code class="text-xl">void AimHi(){</code></pre>
+        <pre ><code class="text-xl">&nbsp;&nbsp;cout << <span class="text-green-500">"Contributed to the development of AIM HI's website using React, improving user engagement and functionality.\n"</code>;</pre>
+        <pre ><code class="text-xl">&nbsp;&nbsp;cout << <span class="text-green-500">"Played a key role in building AI image generation tools, and enhancing product features and performance.\n"</code>;</pre>
+        <pre ><code class="text-xl">&nbsp;&nbsp;cout << <span class="text-green-500">"Attended strategy meetings, offering valuable insights to guide project direction and implementation.\n"</code>;</pre>
+        <pre ><code class="text-xl">&nbsp;&nbsp;cout << <span class="text-green-500">"Directly communicated with potential customers, gathering feedback and aligning development with user needs."\n</code>;</pre>
+        <pre ><code class="text-xl">}</code></pre>
+      </div>
+      <dialog id="ye_modal" class="modal">
+        <div class="modal-box p-10">
+          <h3 class="lg:text-4xl font-bold mb-10 text-center">Young Engineers</h3>
+          <img src="aiden.jpeg" alt="Aiden" class="rounded-lg">
+
+          <h3 class="text-2xl font-semibold mt-10 mb-5 text-blue-500 text-center">Fullstack Engineer</h3>
+          <p>
+            I developed a full-stack website using Go, HTML, CSS, JavaScript, and Tailwind CSS, focusing on creating a user-friendly interface for visitors and staff. To enhance user interaction, I integrated and trained an AI chatbot capable of answering company-specific questions, and I also created an admin panel that allows staff to efficiently add and manage summer camp projects. The scalable backend architecture I implemented ensures fast and reliable performance, accommodating future growth and increased traffic.
+          </p>
+
+          <h3 class="text-2xl font-semibold mt-10 mb-5 text-blue-500 text-center">STEM Instructor</h3>
+          <p>
+            As a STEM instructor at Young Engineers during the summer semester of 2024, I introduced students to a range of foundational topics, from AI chatbot development in Python and basic RESTful APIs to core C++ concepts like OOP, memory allocation, and data structures. I also taught system administration fundamentals, including UNIX commands and SSH, and guided hands-on projects with electronics and formal logic using Minecraft gates. To address compatibility challenges with over 20 students’ varied systems, I implemented a VirtualBox server with SSH, inspired by Florida State’s Linprog server, creating a streamlined, consistent development environment.
+          </p>
+
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <dialog id="aim_modal" class="modal">
+        <div class="modal-box p-10">
+          <h3 class="lg:text-4xl font-bold mb-10 text-center">AIM HI</h3>
+          <div class="flex flex-col items-center justify-center">
+            <img src="aim-hi.jpg" alt="Aiden" class="rounded-lg w-3/4 h-auto justify-center">
           </div>
 
-            <h2>Aspiring Software Engineer</h2>
-                <div class="code-editor">
-                    <div class="line-numbers">
-                        1 <br> 2 <br> 3 <br> 4
-                    </div>
-                    <div id="editor" class="code-lines">
-                        I'm a <span class="syntax_highlight_keyword">Florida State University</span> student deeply passionate about computer science, specializing in <span class="syntax_highlight_keyword">C#
-                    </span>, <span class="syntax_highlight_keyword">C++</span>, and <span class="syntax_highlight_keyword"> Python</span> programming languages.
-                        <br>
-                        Email: awa22@fsu.edu
-                    </div>
-                </div>
-                <div class="btn-box">
-                    <a href="mailto:hireme.aiden.resume@proton.me">hire me.</a>
-                    <a href="mailto:chat.aiden.resume@proton.me">let's talk.</a>
-                </div>
+          <h3 class="text-2xl font-semibold mt-10 mb-5 text-blue-500 text-center">Software Engineering Intern</h3>
+          <p>
+             As a contributor to AIM HI's website development using React, I enhanced user engagement and functionality, creating a more dynamic online experience. I played a pivotal role in building AI image generation tools, which significantly improved product features and overall performance. By attending strategy meetings and communicating directly with potential customers, I gathered valuable feedback that aligned our development efforts with user needs.
+          </p>
 
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Close</button>
+            </form>
+          </div>
         </div>
+      </dialog>
+
     </section>
-    <section id="education">
-        <div class="education-content">
-            <h1>education.</h1>
-            <div class="code-editor">
-                <div class="line-numbers">
-                    1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6<br>7 <br>
-                    8 <br> 9 <br> 10 <br> 11 <br> 12 <br> 13 <br>
-                    14 <br> 15 <br> 16
-                </div>
-                <div id="editor-education" class="code-lines">
-                    <span class="syntax_highlight_keyword">class</span> Student {<br>
-                    &nbsp;&nbsp;<span class="syntax_highlight_keyword">public:</span><br>
-                    &nbsp;&nbsp;Education() { <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;College-Name = <span class="syntax_green">"Florida State University"</span>;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;High-School-Name = <span class="syntax_green">"Plant High School"</span>;<br>
-                    &nbsp;&nbsp;}<br>
-                    &nbsp;&nbsp;void Relevant-Courses(){<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax_highlight_keyword">cout</span> << <span class="syntax_green">"Intro To Artifical Intelligence"</span> << <span class="syntax_highlight_keyword">endl</span>;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax_highlight_keyword">cout</span> << <span class="syntax_green">"Data Science 1"</span> << <span class="syntax_highlight_keyword">endl</span>;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax_highlight_keyword">cout</span> << <span class="syntax_green">"Full Stack Development in C#" </span> << <span class="syntax_highlight_keyword">endl</span>;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax_highlight_keyword">cout</span> << <span class="syntax_green">"Data Structures 2" << </span> <span class="syntax_highlight_keyword">endl</span>;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax_highlight_keyword">cout</span> << <span class="syntax_green">"Software Engineering" << </span> <span class="syntax_highlight_keyword">endl</span>;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax_highlight_keyword">cout</span> << <span class="syntax_green">"Software Engineering Capstone" << </span> <span class="syntax_highlight_keyword">endl</span>;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax_highlight_keyword">cout</span> << <span class="syntax_green">"Intro To Web Development" << </span> <span class="syntax_highlight_keyword">endl</span>;<br>
-                    &nbsp;&nbsp;}
-                    <br>};
-                </div>
-                <div class="run-btn">
-                    <a onclick="runEducation()">Run Code</a>
-                </div>
-            </div>
-            <div id="education-output">
-                <h3>
-                    Florida State University
-                </h3>
-                <div class="fsu-info">
+
+<section id="projects" class="min-h-screen bg-[#17153B] p-10">
+    <div class="flex flex-col text-3xl lg:text-4xl ml-5 lg:ml-10 p-10 pt-20 w-full">
+        <h1 class="">Projects</h1>
+    </div>
+    <div class="flex flex-col items-center w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
+            <div class="card bg-base-100 shadow-xl mx-auto w-full m-10 p-10">
+                <div class="card-body">
+                    <h2 class="card-title">Canvas</h2>
                     <p>
-                        senior.<br>
-                        computer science & philosophy of science.<br>
+                      This project represents my endeavor to replicate the renowned grading platform "Canvas," showcasing my skills in both backend and frontend development. Utilizing C# for the backend, I integrated a REST API to ensure seamless data management, enhancing the overall functionality of the application. This comprehensive approach marks my first foray into full-stack development, reflecting my capability to handle large-scale projects that can serve millions of users effectively.
                     </p>
-                    <h4>
-                       skills.
-                    </h4>
-                    <ul>
-                        <li>C++ </li>
-                        <li>Full Stack Development in C# - MAUI / BLAZOR / Restful</li>
-                        <li>Python Development</li>
-                        <li>Unity Development</li>
-                        <li>Git / Github</li>
-                        <li>Team Management</li>
-                    </ul>
                 </div>
+                <figure><iframe class="justify-center rounded-lg" width="500" height="350" src="https://www.youtube.com/embed/4iSGf0Y7fVw?si=-xLooFO6V5v6I_2_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></figure>
+            </div>
+          <div class="card bg-base-100 shadow-xl mx-auto w-full m-10 p-10">
+                <div class="card-body">
+                    <h2 class="card-title">Ray Tracer</h2>
+                    <p>
+                      I constructed a ray tracer using the C++ language, showcasing my ability to translate complex mathematical concepts into practical applications. By leveraging my knowledge of vector algebra, I calculated ray paths to achieve realistic rendering effects. This project not only demonstrated my adaptability and quick learning in tackling new challenges but also expanded my proficiency in applying mathematical principles to solve real-world problems.
+                  </p>
+                </div>
+                <figure class="flex"><image src="ray.jpg" class="justify-center w-[500px] h-[350px] rounded-lg align-top"></image></figure>
+            </div>
+          <div class="card bg-base-100 shadow-xl mx-auto w-full m-10 p-10">
+                <div class="card-body">
+                    <h2 class="card-title">Meow Chat | <span class="text-red-300">Under Development</span></h2>
+                    <p>
+                      I engineered a dynamic chat application using a custom tech stack, optimizing real-time communication to enhance user interactions. The backend functionality is powered by a high-performance RESTful API developed in Go, ensuring seamless data processing and responsiveness. To create a smooth user experience, I designed and deployed an interactive frontend with Python Flask, integrating HTML, CSS, and JavaScript, while also crafting a robust command-line interface (CLI) in Rust to provide users with greater control and accessibility.
+                    </p>
+                </div>
+                <figure><iframe class="justify-center rounded-lg" width="500" height="350" src="https://www.youtube.com/embed/ibSDl9BW74A?si=Q2xeQWjAbW3SBSKf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></figure>
             </div>
         </div>
-    </section>
-    <section id="work">
-        <div class="work-content">
-            <h1>work experience.</h1>
-        </div>
-        <div class="exp-1">
-          <h2 id="header">young engineer's<span id="cursor">|</span></h2>
-          <div class="code-editor">
-            <div class="line-numbers">
-              1 <br> 2 <br> 3 <br> 4
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
+          <div class="card bg-base-100 shadow-xl mx-auto w-full m-10 p-10">
+            <div class="card-body">
+              <h2 class="card-title">Spell Check</h2>
+              <p>
+                I developed a C++ spell checker that incorporates various algorithms for enhancing word correction efficiency. The project utilizes a dictionary file to validate words and employs several techniques, including character substitution, deletion, insertion, and swapping, to identify similar words based on user input. By leveraging the ftxui library for a user interface and implementing a high-performance backend, this application demonstrates my ability to combine programming skills with algorithmic thinking to solve real-world problems in text processing.
+              </p>
             </div>
-            <div id="editor-ye" class="code-lines">
-              position = <span class="syntax_green">"Full Stack Engineer"</span>; <br>
-              description = <br><span class="syntax_green">"<br>Developed a full-stack website using Go, HTML, CSS, JavaScript, and Tailwind CSS.<br>
-                 Integrated and trained an AI chatbot to answer company-specific questions.<br>
-                 Created an admin panel for staff to add/manage summer camp projects.<br>
-                 Built a scalable backend to ensure fast, reliable performance.<br>"</span>;
+            <!-- <figure><iframe class="justify-center rounded-lg" width="500" height="350" src="https://www.youtube.com/embed/4iSGf0Y7fVw?si=-xLooFO6V5v6I_2_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></figure> -->
+          </div>
+          <div class="card bg-base-100 shadow-xl mx-auto w-full m-10 p-10">
+            <div class="card-body">
+              <h2 class="card-title">German Quiz Game</h2>
+              <p>
+                German Quiz Master is a Python-based educational quiz game that leverages the Dear PyGui library to test and enhance users' knowledge of the German language. By randomly generating German words and prompting users for their translations, this interactive game offers a fun way to improve vocabulary, grammar, and comprehension skills. As a student who faced challenges in learning German, I developed this application to aid myself and others in studying more effectively and making language acquisition enjoyable.
+              </p>
+            </div>
+            <!-- <figure><iframe class="justify-center rounded-lg" width="500" height="350" src="https://www.youtube.com/embed/4iSGf0Y7fVw?si=-xLooFO6V5v6I_2_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></figure> -->
+          </div>
+          <div class="card bg-base-100 shadow-xl mx-auto w-full m-10 p-10">
+            <div class="card-body">
+              <h2 class="card-title">Crab Tree</h2>
+              <p>
+                Crab Tree is a Rust-based remake of the classic tree data structure, designed to explore and implement advanced features and functionalities. This project showcases my proficiency in Rust while emphasizing the performance and safety benefits of the language. By enhancing the traditional tree structure, Crab Tree aims to provide efficient data organization and manipulation, making it a valuable resource for developers seeking to leverage the power of Rust in their projects.
+              </p>
             </div>
           </div>
-        </div>
-
-        <div class="exp-1">
-            <h2 id="header">young engineer's</h2>
-            <div class="code-editor">
-                <div class="line-numbers">
-                    1 <br> 2 <br> 3 <br> 4
-                </div>
-                <div id="editor-ye" class="code-lines">
-                    position = <span class="syntax_green">"Stem Instructor"</span>; <br>
-                    description = <br><span class="syntax_green">"<br>During my time as an educator, I honed my skills in instructing and mentoring children in various programming languages<br> including Python, C#, C++, and Java.
-                    Through engaging lesson plans and hands-on activities, I effectively communicated<br> complex concepts to young learners, fostering their interest and understanding of computer science principles.<br>
-                    Notably, I spearheaded a captivating chatbot project, leveraging API usage and Flask applications, which served<br>
-                    as a dynamic platform for sharing practical insights into software development with my students.<br>"</span>;
-                </div>
-            </div>
-        </div>
-         <div class="exp-1">
-            <h2 id="header">young engineer's</h2>
-            <div class="code-editor">
-                <div class="line-numbers">
-                    1 <br> 2 <br> 3 <br> 4
-                </div>
-                <div id="editor-ye" class="code-lines">
-                    position = <span class="syntax_green">"Stem Instructor"</span>; <br>
-                    description = <br><span class="syntax_green">"<br>Contributed to the development of AIM HI's website using React, improving user engagement and functionality.<br>
-Played a key role in building AI image generation tools, and enhancing product features and performance.<br>
-Attended strategy meetings, offering valuable insights to guide project direction and implementation.<br>
-Directly communicated with potential customers, gathering feedback and aligning development with user needs.<br>"</span>;
-                </div>
-            </div>
-        </div>
-        
-    </section>
-    <section id="projects">
-        <div class="projects-content">
-            <h1>
-                projects.
-            </h1>
-            <div class="projects-items">
-            <ul>
-              <li class="card">
-                <a target="_blank" href="https://github.com/awa03/RayTracer">
-                  <h1>Meow Chat</h1>
-                  <div class="skills">
-                    <p>Rust</p>
-                    <p>Go</p>
-                    <p style="background: rgba(181,183,24,0.73); color: #1e2125">Python</p>
-                    <p style="background: #478c96; color: #1e2125">Flask</p>
-                  </div>
-                  <div class="code-editor">
-                    <div class="line-numbers">
-                      1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
-                    </div>
-                    <div id="editor-dnr" class="code-lines">
-                      description =
-                      <span class="syntax_green">"<br>
-                        A straightforward chat interface<br>
-                        utilizing a RESTful API, developed<br>
-                        in Go and integrated with a Python Flask<br>
-                        application.A straightforward chat<br> interface
-                        utilizing a RESTful API,<br>
-                        developed in Go and integrated with<br>
-                        a Python Flask application.
-                        "</span>;
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-
-              <li class="card">
-                <a target="_blank" href="https://github.com/awa03/RayTracer">
-                  <h1>Ray Tracer</h1>
-                  <div class="skills">
-                    <p style="background-color: #0879d7;">C++</p>
-                    <p>Vector Algebra</p>
-                    <p style="background: rgba(89,8,94,0.73)">C#</p>
-                  </div>
-                  <div class="code-editor">
-                    <div class="line-numbers">
-                      1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
-                    </div>
-                    <div id="editor-dnr" class="code-lines">
-                      description =
-                      <span class="syntax_green">"<br>
-                        Leveraging my knowledge of C++, I<br>
-                        implemented color rendering and utilized<br>
-                        my understanding of data structures and<br>
-                        vector algebra to enhance the<br> functionality
-                        and performance of the ray<br> tracer. This
-                        experience not only<br> solidified my
-                        programming skills but also<br> expanded my
-                        proficiency in applying<br> mathematical
-                        concepts to real-world<br> problems. 
-                        "</span>;
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li class="card">
-                <a target="_blank" href="https://github.com/awa03/InoculationBetaApp">
-                  <h1>Do Not Resuscitate</h1>
-                  <div class="skills">
-                    <p style="background: rgba(89,8,94,0.73)">C#</p>
-                    <p>Unity</p>
-                    <p>UX / UI</p>
-                    <p>UML</p>
-                    <p style="background: rgba(155,31,40,0.73)">Agile</p>
-                  </div>
-                  <div class="code-editor">
-                    <div class="line-numbers">
-                      1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
-                    </div>
-                    <div id="editor-dnr" class="code-lines">
-                      description =
-                      <span class="syntax_green">"<br>
-                        A tower defense game created using<br> the unity engine.
-                        Through this project <br>I learned
-                        varies skills such as agile<br>
-                        development, uml documentation,<br>
-                        and the c# language. My contributions<br>
-                        to this project encompass: art,<br>
-                        player movement, level design,<br>
-                        dialogs, shop mechanics, save
-                        and load<br> game mechanics, and
-                        game play <br>functionality.<br>
-                        "</span>;
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="card">
-                <a target="_blank" href="https://github.com/awa03/Canvas">
-                  <h1>Canvas</h1>
-                  <div class="skills">
-                    <p style="background: rgba(89,8,94,0.73)">C#</p>
-                    <p>MAUI</p>
-                    <p>RestAPI</p>
-                    <p>Git</p>
-                    <p>UX / UI</p>
-                    <p style="background: rgba(155,31,40,0.73)">Agile</p>
-                  </div>
-                  <div class="code-editor">
-                    <div class="line-numbers">
-                      1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
-                    </div>
-
-                    <div id="editor-canv" class="code-lines">
-                      description =
-                      <span class="syntax_green">"<br>
-                        Canvas is a replica of the popular<br>
-                        Student grading platform 'Canvas'.<br>
-                        This project was created in C# MAUI.<br>
-                        Through this project I gained<br>
-                        experience using software design <br>
-                        pattern's and in MVVM Development. The<br>
-                        focus of this project was to follow<br>
-                        good software design principles.<br>
-                        This project serves as a testimate to <br>my
-                        ability to create fullstack<br> applications.
-
-                        "</span>;
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="card">
-
-                <a href="https://github.com/awa03/YoungEngineers-ChatBot-Project">
-                  <h1>Chat Bot Tutorial</h1>
-                  <div class="skills">
-                    <p style="background: rgba(181,183,24,0.73); color: #1e2125">Python</p>
-                    <p style="background: #478c96; color: #1e2125">Flask</p>
-                    <p>Git</p>
-                    <p>Html / Css</p>
-                    <p style="background: #0a2e3d">Education</p>
-                  </div>
-                  <div class="code-editor">
-                    <div class="line-numbers">
-                      1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
-                    </div>
-                    <div id="editor-chat-bot" class="code-lines">
-                      description =
-                      <span class="syntax_green">"<br>
-                        Experienced educator proficient in Python<br>
-                        utilized Flask API to teach students at<br>
-                        Young Engineers how to build a chatbot.<br>
-                        Leveraged Groq API for enhanced responses,<br>
-                        imparting vital skills in AI development<br>
-                        to prepare students for evolving<br>
-                        technological landscapes.<br>
-                        "</span>;
-                    </div>
-                  </div>
-
-                </a>
-              </li>
-              <li class="card">
-                <a target="_blank" href="https://github.com/awa03/spellChecker">
-                  <h1>Spell Check</h1>
-                  <div class="skills">
-                    <p style="background: #0879d7; ">C++</p>
-                    <p>FTXUI</p>
-                    <p>Data Structures</p>
-                    <p>Algorithms</p>
-                  </div>
-                  <div class="code-editor">
-                    <div class="line-numbers">
-                      1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
-                    </div>
-                    <div id="editor-spellc" class="code-lines">
-                      description =
-                      <span class="syntax_green">"<br>
-                        Developed a C++ spell checker application<br>
-                        featuring a custom hash set, <br>designed as extra
-                        credit for my Data<br>
-                        Structures 2 course. Created a proprietary<br>
-                        algorithm to identify and suggest<br>
-                        replacements for misspelled words within<br>
-                        text files, showcasing proficiency in<br>
-                        both data structures and algorithm <br>design.
-                        <br>
-                        "</span>;
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="card">
-                <a target="_blank" href="https://github.com/awa03/MazeSolvingAlgorithms">
-                  <h1>Maze Solving Visualizer's</h1>
-                  <div class="skills">
-                    <p style="background: rgba(181,183,24,0.73); color: #1e2125">Python</p>
-                    <p>Pygame</p>
-                    <p>Algorithms</p>
-                  </div>
-                  <div class="code-editor">
-                    <div class="line-numbers">
-                      1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
-                    </div>
-                    <div id="editor-maze" class="code-lines">
-                      description =
-                      <span class="syntax_green">"<br>
-                        Engineered a Python application using<br>
-                        Pygame, integrating Depth-First Search<br>
-                        and Dijkstra's search algorithms to<br>
-                        navigate mazes. Designed for user-drawn<br>
-                        or randomly generated mazes, demonstrating<br>
-                        expertise in pathfinding algorithms<br>
-                        and interactive graphical interfaces.<br>
-                        "</span>;
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="card">
-                <a target="_blank" href="https://github.com/awa03/RedditEngine">
-                  <h1>Reddit Engine</h1>
-                  <div class="skills">
-                    <p style="background: rgba(89,8,94,0.73)">C#</p>
-                    <p>MAUI</p>
-                    <p>RestAPI</p>
-                    <p>Git</p>
-                    <p>UX / UI</p>
-                  </div>
-                  <div class="code-editor">
-                    <div class="line-numbers">
-                      1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br> 11 <br> 12
-                    </div>
-                    <div id="editor-reddit" class="code-lines">
-                      description =
-                      <span class="syntax_green">"<br>
-                        Crafted a Reddit search engine employing<br>
-                        HTTP requests and web scraping techniques,<br>
-                        with a C# UI built on Maui framework for<br>
-                        enhanced user experience. Seamlessly<br>
-                        combines backend functionality with<br>
-                        modern UI design, showcasing proficiency<br>
-                        in both web technologies and desktop<br>
-                        application development.
-                        <br>"</span>;
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
           </div>
-        </div>
-      </section>
+
+
+
+
+
 
     </div>
-    <script src="script.js"></script>
+</section>
+
+    <footer class="footer text-neutral-content p-10 bg-[#121212]">
+      <aside class="text-center lg:text-left">
+        <svg
+          width="50"
+          height="50"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          class="fill-current mx-auto lg:mx-0">
+          <path
+            d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.553.489 2.553 1.83 0 .822-.509 1.59-1.328 1.852z">
+          </path>
+        </svg>
+        <p class="font-bold text-2xl mt-4">Aiden Allen</p>
+        <p class="text-lg">Senior Computer Science Student</p>
+        <p>awa22@fsu.edu</p>
+      </aside>
+    </footer>
   </body>
 </html>
+
