@@ -1,5 +1,5 @@
 <!doctype html>
-<html data-theme="dark" class="w-screen">
+<html data-theme="dark" class="w-full overflow-x-hidden m-0 p-0">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-[#000000] overflow-x-hidden m-0 p-0 w-screen">
+  <body class="bg-[#000000] overflow-x-hidden m-0 p-0 w-full">
     <section class="bg-[#1D1F22] min-h-screen" id="home">
-      <div class="navbar bg-base-300 w-full fixed z-50">
+      <div class="navbar bg-base-300 w-full fixed sm:absolute z-50">
         <div class="navbar-start">
           <a class="btn btn-ghost text-2xl">aiden.</a>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 space-x-10 no-underline u">
+          <ul class="menu menu-horizontal px-1 space-x-10 no-underline">
             <li><a href="#home" class="no-underline">Home</a></li>
             <li><a href="#education" class="no-underline">Education</a></li>
             <li><a href="#experience" class="no-underline">Experience</a></li>
@@ -27,14 +27,14 @@
           <progress id="scrollProgress" class="progress w-56" value="0" max="100"></progress>
         </div>
       </div>
-      <div class="hero bg-base-200 min-h-screen flex flex-col lg:flex-row justify-center items-center">
+      <div class="hero bg-base-200 min-h-screen flex flex-col lg:flex-row justify-center items-center w-full">
         <img
         src="./me.jpeg"
-        class="max-w-xs lg:max-w-sm rounded-3xl shadow-2xl mr-0 lg:mr-10 justify-center mt-16" />
+        class="max-w-xs lg:max-w-sm rounded-3xl shadow-2xl mr-0 lg:mr-10 justify-center mt-16 mb-10" />
         <div class="text-center lg:text-left">
-          <h1 class="text-4xl lg:text-6xl text-white font-bold lato-bold mb-4">Hey, I'm Aiden!</h1>
+          <h1 class="text-4xl lg:text-6xl text-white font-bold lato-bold mb-4 sm:mt-2">Hey, I'm Aiden!</h1>
           <h2 class="text-3xl lg:text-4xl text-blue-500 font-bold mb-4">Full Stack Engineer</h2>
-          <div class="mockup-code text-sm lg:text-base">
+          <div class="mockup-code text-sm lg:text-base sm:text-sm">
             <pre data-prefix="1"><code>I'm a <span class="text-blue-500">Florida State University</span> student deeply passionate</code></pre>
             <pre data-prefix="2"><code>about computer science, specializing in <span class="text-blue-500">C#</span>, <span class="text-blue-500">C/C++</span>, <span class="text-blue-500">Go</span></code></pre>
             <pre data-prefix="3"><code>and <span class="text-blue-500">Python</span> programming languages</code></pre>
