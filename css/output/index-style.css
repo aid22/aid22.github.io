@@ -2144,10 +2144,6 @@ html {
   margin: 2.5rem;
 }
 
-.m-4 {
-  margin: 1rem;
-}
-
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -2205,10 +2201,6 @@ html {
   margin-top: 1rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -2227,10 +2219,6 @@ html {
 
 .h-auto {
   height: auto;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .min-h-screen {
@@ -2259,15 +2247,6 @@ html {
 
 .w-full {
   width: 100%;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .max-w-xs {
@@ -2385,11 +2364,6 @@ html {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
 }
@@ -2429,10 +2403,6 @@ html {
 
 .pt-20 {
   padding-top: 5rem;
-}
-
-.text-left {
-  text-align: left;
 }
 
 .text-center {
@@ -2658,43 +2628,8 @@ body {
     margin: 2.5rem;
   }
 
-  .sm\:m-4 {
-    margin: 1rem;
-  }
-
-  .sm\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
-  .sm\:mx-5 {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-  }
-
-  .sm\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
   .sm\:mt-2 {
     margin-top: 0.5rem;
-  }
-
-  .sm\:hidden {
-    display: none;
-  }
-
-  .sm\:bg-red-600 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-  }
-
-  .sm\:p-10 {
-    padding: 2.5rem;
-  }
-
-  .sm\:text-left {
-    text-align: left;
   }
 
   .sm\:text-right {
@@ -2714,10 +2649,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .lg\:visible {
-    visibility: visible;
-  }
-
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
