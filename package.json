@@ -1,16 +1,16 @@
 {
   "name": "aiden-resume",
-  "homepage": "https://aid22.github.io",
+  "homepage": "http://aid22.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+},
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
